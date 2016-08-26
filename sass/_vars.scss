@@ -1,0 +1,50 @@
+/* Variable Declaration */
+
+/* Mixins*/
+@mixin font-arimo($weight: 400) {
+  font-family: 'Arimo', Helvetica, Arial, sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-open-sans($weight: 400) {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: $weight;
+}
+
+@mixin font-arial($weight: 400) {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: $weight;
+}
+
+//Breakpoint for responsive design breaks.
+@mixin breakpoint($point) {
+  @media (min-width: $point) { @content; }
+}
+
+@mixin retina-breakpoint() {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (           min-resolution: 192dpi),
+    only screen and (            min-resolution: 2dppx)
+    { @content; }
+}
+
+/* Reusable Classes */
+
+%ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently not supported by any browser */
+}
