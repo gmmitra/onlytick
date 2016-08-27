@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:dist": "./node_modules/.bin/node-sass --output-style compressed -o css/ sass",
-    "sass": "./node_modules/.bin/node-sass -o css/ sass",
-    "watch:css": "./node_modules/.bin/watch --wait .1 'npm run sass' sass"
+    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "author": "Mark Uy",
   "license": "ISC",
@@ -15,7 +13,9 @@
   },
   "description": "",
   "devDependencies": {
-    "nodemon": "^1.10.2",
-    "watch": "^0.19.2"
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0"
   }
 }

@@ -354,78 +354,84 @@ a, a:hover, a:active {
       text-align: center;
       font-size: 36px;
       color: #fff; }
-    .main-banner > .main-banner-wrap > .category > div > a {
-      width: 132px;
-      height: 119px;
-      display: inline-block;
-      border: 1px solid #fff;
-      text-align: center; }
-      .main-banner > .main-banner-wrap > .category > div > a > .text {
-        color: #fff;
-        text-transform: uppercase;
+    .main-banner > .main-banner-wrap > .category {
+      margin-top: 20px; }
+      .main-banner > .main-banner-wrap > .category > div > a {
+        width: 132px;
+        height: 119px;
+        display: inline-block;
+        border: 1px solid #fff;
         text-align: center; }
-      .main-banner > .main-banner-wrap > .category > div > a > .svg {
-        display: block;
-        margin: 10px 0;
-        text-align: center; }
-        .main-banner > .main-banner-wrap > .category > div > a > .svg > svg {
-          width: 50px;
-          height: 50px;
-          stroke: #fff; }
-      .main-banner > .main-banner-wrap > .category > div > a:hover {
-        border: 1px solid #ea1d28; }
-        .main-banner > .main-banner-wrap > .category > div > a:hover > .text {
-          color: #ea1d28; }
-        .main-banner > .main-banner-wrap > .category > div > a:hover > .svg > svg {
-          width: 50px;
-          height: 50px;
-          stroke: #ea1d28; }
+        .main-banner > .main-banner-wrap > .category > div > a > .text {
+          color: #fff;
+          text-transform: uppercase;
+          text-align: center; }
+        .main-banner > .main-banner-wrap > .category > div > a > .svg {
+          display: block;
+          margin: 10px 0;
+          text-align: center; }
+          .main-banner > .main-banner-wrap > .category > div > a > .svg > svg {
+            width: 50px;
+            height: 50px;
+            stroke: #fff; }
+        .main-banner > .main-banner-wrap > .category > div > a:hover {
+          border: 1px solid #ea1d28; }
+          .main-banner > .main-banner-wrap > .category > div > a:hover > .text {
+            color: #ea1d28; }
+          .main-banner > .main-banner-wrap > .category > div > a:hover > .svg > svg {
+            width: 50px;
+            height: 50px;
+            stroke: #ea1d28; }
 
 .trending-ads {
   width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 15px; }
   .trending-ads > h2 {
     font-size: 14px;
-    color: #8e8e8e; }
-  .trending-ads > .content > .item {
-    position: relative;
-    float: left;
-    width: 250px;
-    height: 198px;
-    display: block; }
-    .trending-ads > .content > .item > img {
-      position: absolute;
-      top: 0;
-      z-index: 1; }
-    .trending-ads > .content > .item > .title {
-      position: absolute;
-      left: 10px;
-      bottom: 30px;
-      z-index: 2;
-      font-size: 16px;
-      font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
-      color: #fff; }
-    .trending-ads > .content > .item > .location-time {
-      position: absolute;
-      width: 230px;
-      left: 10px;
-      bottom: 10px;
-      z-index: 2; }
-      .trending-ads > .content > .item > .location-time > .location {
-        float: left;
-        color: #fff; }
-        .trending-ads > .content > .item > .location-time > .location > img {
-          margin-right: 5px; }
-      .trending-ads > .content > .item > .location-time > .time {
-        float: right;
-        color: #fff; }
-    .trending-ads > .content > .item > .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
+    color: #8e8e8e;
+    text-transform: uppercase; }
+  .trending-ads > .content {
+    margin-top: 20px; }
+    .trending-ads > .content > .item {
+      position: relative;
+      float: left;
       width: 250px;
       height: 198px;
-      z-index: 2; }
+      display: block; }
+      .trending-ads > .content > .item > img {
+        position: absolute;
+        top: 0;
+        z-index: 1; }
+      .trending-ads > .content > .item > .title {
+        position: absolute;
+        left: 10px;
+        bottom: 30px;
+        z-index: 2;
+        font-size: 16px;
+        font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
+        color: #fff; }
+      .trending-ads > .content > .item > .location-time {
+        position: absolute;
+        width: 230px;
+        left: 10px;
+        bottom: 10px;
+        z-index: 2; }
+        .trending-ads > .content > .item > .location-time > .location {
+          float: left;
+          color: #fff; }
+          .trending-ads > .content > .item > .location-time > .location > img {
+            margin-right: 5px; }
+        .trending-ads > .content > .item > .location-time > .time {
+          float: right;
+          color: #fff; }
+      .trending-ads > .content > .item > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 198px;
+        z-index: 2; }
 
 .popuplar-categories {
   width: 1000px;
@@ -434,7 +440,8 @@ a, a:hover, a:active {
   .popuplar-categories > h2 {
     font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #5a5a5a; }
+    color: #5a5a5a;
+    text-transform: uppercase; }
   .popuplar-categories > .content > dl {
     float: left;
     width: 319px;
@@ -465,3 +472,5 @@ a, a:hover, a:active {
       margin-right: 0; }
 
 /* Pages */
+
+/*# sourceMappingURL=app.css.map */
