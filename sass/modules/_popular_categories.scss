@@ -1,0 +1,62 @@
+.popuplar-categories {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  > h2 {
+    @include font-roboto-bold();
+    font-size: 14px;
+    color: $gray-dark;
+  }
+
+  > .content {
+
+    > dl {
+      float: left;
+      width: 319px;
+      margin: 15px 21px 15px 0;
+
+      > dt {
+        font-size: 17px;
+
+        > span {
+          margin: 0 10px;
+        }
+
+        height: 39px;
+        line-height: 39px;
+        background: $red;
+        @include font-roboto-bold();
+        font-size: 16px;
+        color: #fff;
+      }
+
+      > dd {
+        border-bottom: 1px solid #dae1e8;
+
+        > a {
+          display: block;
+          padding: 12px;
+          color: #000;
+
+          > span {
+            color: $gray;
+          }
+        }
+      }
+
+      > .view-all {
+        border-bottom: none;
+
+        > a {
+          color: $red;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+}

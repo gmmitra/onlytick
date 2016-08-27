@@ -1,14 +1,27 @@
 /* Variable Declaration */
 
-/* Mixins*/
-@mixin font-arimo($weight: 400) {
-  font-family: 'Arimo', Helvetica, Arial, sans-serif;
-  font-weight: $weight;
+$red: #ea1d28;
+$gray: #8e8e8e;
+$gray-dark: #5a5a5a;
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf')  format('truetype');
 }
 
-@mixin font-open-sans($weight: 400) {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: $weight;
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.ttf')  format('truetype');
+}
+
+/* Mixins*/
+@mixin font-roboto() {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+@mixin font-roboto-bold() {
+  font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
 }
 
 @mixin font-arial($weight: 400) {
