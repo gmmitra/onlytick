@@ -3,6 +3,11 @@
   margin: 0 auto;
   padding-top: 40px;
 
+  @include breakpoint-up(480px) {
+    width: 100%;
+    padding: 20px;
+  }
+
   > h2 {
     @include font-roboto-bold();
     font-size: 14px;
@@ -16,6 +21,10 @@
       float: left;
       width: 319px;
       margin: 15px 21px 15px 0;
+
+      @include breakpoint-up(480px) {
+        width: 100%;
+      }
 
       > dt {
         font-size: 17px;

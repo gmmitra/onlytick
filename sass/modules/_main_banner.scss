@@ -3,20 +3,38 @@
   height: 371px;
   background: url('../img/main-banner-bg.jpg') no-repeat center center;
 
+  @include breakpoint-up(480px) {
+    width: 100%;
+  }
+
   > .main-banner-wrap {
     width: 1000px;
     margin: 0 auto;
     overflow: hidden;
+
+    @include breakpoint-up(480px) {
+      width: 100%;
+    }
 
     > h2 {
       margin-top: 93px;
       text-align: center;
       font-size: 36px;
       color: #fff;
+
+      @include breakpoint-up(480px) {
+        margin-top: 50px;
+        font-size: 18px;
+      }
     }
 
     > .category {
       margin-top: 50px;
+
+      @include breakpoint-up(480px) {
+        width: 275px;
+        margin: 0 auto;
+      }
 
       > div {
 
@@ -27,10 +45,22 @@
           border: 1px solid #fff;
           text-align: center;
 
+          @include breakpoint-up(480px) {
+            width: 100px;
+            height: 80px;
+            float: left;
+            margin: 5px 10px;
+          }
+
           > .text {
             color: #fff;
             text-transform: uppercase;
             text-align: center;
+
+            @include breakpoint-up(480px) {
+              display: block;
+              font-size: 11px;
+            }
           }
 
           > .svg {
@@ -38,10 +68,21 @@
             margin: 10px 0;
             text-align: center;
 
+            @include breakpoint-up(480px) {
+              display: block;
+              height: 25px;
+              text-align: center;
+            }
+
             > svg {
               width: 50px;
               height: 50px;
               stroke: #fff;
+
+              @include breakpoint-up(480px) {
+                width: 30px;
+                height: 30px;
+              }
             }
           }
 
@@ -58,6 +99,11 @@
                 width: 50px;
                 height: 50px;
                 stroke: $red;
+
+                @include breakpoint-up(480px) {
+                  width: 30px;
+                  height: 30px;
+                }
               }
             }
           }

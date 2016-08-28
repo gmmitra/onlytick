@@ -30,8 +30,12 @@ $gray-dark: #5a5a5a;
 }
 
 //Breakpoint for responsive design breaks.
-@mixin breakpoint($point) {
+@mixin breakpoint-down($point) {
   @media (min-width: $point) { @content; }
+}
+
+@mixin breakpoint-up($point) {
+  @media (max-width: $point) { @content; }
 }
 
 @mixin retina-breakpoint() {
