@@ -3,7 +3,7 @@
   height: 371px;
   background: url('../img/main-banner-bg.jpg') no-repeat center center;
 
-  @include breakpoint-up(480px) {
+  @include breakpoint-up(1000px) {
     width: 100%;
   }
 
@@ -12,7 +12,7 @@
     margin: 0 auto;
     overflow: hidden;
 
-    @include breakpoint-up(480px) {
+    @include breakpoint-up(1000px) {
       width: 100%;
     }
 
@@ -22,7 +22,7 @@
       font-size: 36px;
       color: #fff;
 
-      @include breakpoint-up(480px) {
+      @include breakpoint-up(1000px) {
         margin-top: 50px;
         font-size: 18px;
       }
@@ -31,12 +31,23 @@
     > .category {
       margin-top: 50px;
 
+      @include breakpoint-up(1000px) {
+        width: 480px;
+        margin: 50px auto;
+      }
+
       @include breakpoint-up(480px) {
-        width: 275px;
-        margin: 0 auto;
+        width: 270px;
+        margin: 20px auto;
       }
 
       > div {
+        float: left;
+        margin-right: 40px;
+
+        @include breakpoint-up(480px) {
+          margin-right: 10px;
+        }
 
         > a {
           width: 132px;
@@ -45,7 +56,7 @@
           border: 1px solid #fff;
           text-align: center;
 
-          @include breakpoint-up(480px) {
+          @include breakpoint-up(1000px) {
             width: 100px;
             height: 80px;
             float: left;
@@ -57,7 +68,7 @@
             text-transform: uppercase;
             text-align: center;
 
-            @include breakpoint-up(480px) {
+            @include breakpoint-up(1000px) {
               display: block;
               font-size: 11px;
             }
@@ -68,7 +79,7 @@
             margin: 10px 0;
             text-align: center;
 
-            @include breakpoint-up(480px) {
+            @include breakpoint-up(1000px) {
               display: block;
               height: 25px;
               text-align: center;
@@ -79,7 +90,7 @@
               height: 50px;
               stroke: #fff;
 
-              @include breakpoint-up(480px) {
+              @include breakpoint-up(1000px) {
                 width: 30px;
                 height: 30px;
               }
@@ -100,13 +111,17 @@
                 height: 50px;
                 stroke: $red;
 
-                @include breakpoint-up(480px) {
+                @include breakpoint-up(1000px) {
                   width: 30px;
                   height: 30px;
                 }
               }
             }
           }
+        }
+
+        &:last-child {
+          margin-right: 0;
         }
       }
     }

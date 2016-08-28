@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-top: 15px;
 
-  @include breakpoint-up(480px) {
+  @include breakpoint-up(1000px) {
     width: 100%;
     padding: 20px;
   }

@@ -6,7 +6,7 @@
     width: 1000px;
     margin: 0 auto;
 
-    @include breakpoint-up(480px) {
+    @include breakpoint-up(1000px) {
       width: 100%;
     }
 
@@ -16,6 +16,10 @@
         width: 65%;
         float: left;
 
+        @include breakpoint-up(1000px) {
+          width: 100%;
+        }
+
         @include breakpoint-up(480px) {
           width: 100%;
           float: none;
@@ -24,6 +28,11 @@
         > .main-logo {
           float: left;
           margin: 4px 18px 0 0;
+
+          @include breakpoint-up(1000px) {
+            float: none;
+            padding: 0 10px;
+          }
 
           @include breakpoint-up(480px) {
             float: none;
@@ -151,6 +160,10 @@
         width: 35%;
         float: right;
 
+        @include breakpoint-up(1000px) {
+          width: 100%;
+        }
+
         @include breakpoint-up(480px) {
           width: 100%;
           float: none;
@@ -160,6 +173,11 @@
         > .location-lang-wrap {
           float: left;
           margin: 23px 0 0 20px;
+
+          @include breakpoint-up(1000px) {
+            margin: 0 0 0 5px;
+            padding: 10px;
+          }
 
           @include breakpoint-up(480px) {
             margin: 0;
@@ -230,6 +248,11 @@
           margin: 23px 0 0;
           float: right;
 
+          @include breakpoint-up(1000px) {
+            margin: 0;
+            padding: 10px;
+          }
+
           @include breakpoint-up(480px) {
             margin: 0;
             padding: 10px;
@@ -259,9 +282,17 @@
     > .bottom {
       margin-top: 15px;
 
+      @include breakpoint-up(1000px) {
+        width: 100%;
+      }
+
       > .search-wrap {
         float: left;
         width: 85%;
+
+        @include breakpoint-up(1000px) {
+          padding: 10px;
+        }
 
         @include breakpoint-up(480px) {
           float: none;
@@ -275,6 +306,10 @@
           height: 40px;
           margin-right: 7px;
           text-align: center;
+
+          @include breakpoint-up(1000px) {
+            width: 20%;
+          }
 
           @include breakpoint-up(480px) {
             float: none;
@@ -291,6 +326,10 @@
             @include font-roboto-bold();
             font-size: 14px;
             color: #fff;
+
+            @include breakpoint-up(1000px) {
+              width: 90%;
+            }
 
             @include breakpoint-up(480px) {
               width: 100%;
@@ -510,6 +549,10 @@
             float: left;
             width: 575px;
 
+            @include breakpoint-up(1000px) {
+              width: 60%;
+            }
+
             @include breakpoint-up(480px) {
               float: none;
               width: 100%;
@@ -525,6 +568,10 @@
               outline: 0;
               font-size: 20px;
 
+              @include breakpoint-up(1000px) {
+                width: 60%;
+              }
+
               @include breakpoint-up(480px) {
                 width: 70%;
               }
@@ -533,7 +580,7 @@
             > .filter {
               float: right;
 
-              @include breakpoint-up(480px) {
+              @include breakpoint-up(1000px) {
                 width: 30%;
               }
 
@@ -553,6 +600,10 @@
 
                 > .caret {
                   margin-left: 70px;
+
+                  @include breakpoint-up(1000px) {
+                    margin-left: 30px;
+                  }
 
                   @include breakpoint-up(480px) {
                     margin-left: 70px;
@@ -605,6 +656,10 @@
             border: none;
             outline: 0;
 
+            @include breakpoint-up(1000px) {
+              width: 30%;
+            }
+
             @include breakpoint-up(480px) {
               float: none;
               width: 100%;
@@ -615,6 +670,12 @@
 
       > .post-add {
         float: right;
+
+        @include breakpoint-up(1000px) {
+          width: 12%;
+          margin: 10px 3% 0 0;
+          text-align: center;
+        }
 
         @include breakpoint-up(480px) {
           width: 100%;
@@ -632,6 +693,10 @@
           color: #fff;
           border: none;
           outline: 0;
+
+          @include breakpoint-up(1000px) {
+            width: 100%;
+          }
 
           @include breakpoint-up(480px) {
             width: 90%;

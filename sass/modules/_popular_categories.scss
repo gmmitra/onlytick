@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-top: 40px;
 
-  @include breakpoint-up(480px) {
+  @include breakpoint-up(1000px) {
     width: 100%;
     padding: 20px;
   }
@@ -22,7 +22,7 @@
       width: 319px;
       margin: 15px 21px 15px 0;
 
-      @include breakpoint-up(480px) {
+      @include breakpoint-up(1000px) {
         width: 100%;
       }
 

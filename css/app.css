@@ -54,12 +54,15 @@ a, a:hover, a:active {
   .main-header-wrap > .main-header {
     width: 1000px;
     margin: 0 auto; }
-    @media (max-width: 480px) {
+    @media (max-width: 1000px) {
       .main-header-wrap > .main-header {
         width: 100%; } }
     .main-header-wrap > .main-header > .top > .left {
       width: 65%;
       float: left; }
+      @media (max-width: 1000px) {
+        .main-header-wrap > .main-header > .top > .left {
+          width: 100%; } }
       @media (max-width: 480px) {
         .main-header-wrap > .main-header > .top > .left {
           width: 100%;
@@ -67,6 +70,10 @@ a, a:hover, a:active {
       .main-header-wrap > .main-header > .top > .left > .main-logo {
         float: left;
         margin: 4px 18px 0 0; }
+        @media (max-width: 1000px) {
+          .main-header-wrap > .main-header > .top > .left > .main-logo {
+            float: none;
+            padding: 0 10px; } }
         @media (max-width: 480px) {
           .main-header-wrap > .main-header > .top > .left > .main-logo {
             float: none;
@@ -153,6 +160,9 @@ a, a:hover, a:active {
     .main-header-wrap > .main-header > .top > .right {
       width: 35%;
       float: right; }
+      @media (max-width: 1000px) {
+        .main-header-wrap > .main-header > .top > .right {
+          width: 100%; } }
       @media (max-width: 480px) {
         .main-header-wrap > .main-header > .top > .right {
           width: 100%;
@@ -161,6 +171,10 @@ a, a:hover, a:active {
       .main-header-wrap > .main-header > .top > .right > .location-lang-wrap {
         float: left;
         margin: 23px 0 0 20px; }
+        @media (max-width: 1000px) {
+          .main-header-wrap > .main-header > .top > .right > .location-lang-wrap {
+            margin: 0 0 0 5px;
+            padding: 10px; } }
         @media (max-width: 480px) {
           .main-header-wrap > .main-header > .top > .right > .location-lang-wrap {
             margin: 0;
@@ -201,6 +215,10 @@ a, a:hover, a:active {
       .main-header-wrap > .main-header > .top > .right > .login-signup {
         margin: 23px 0 0;
         float: right; }
+        @media (max-width: 1000px) {
+          .main-header-wrap > .main-header > .top > .right > .login-signup {
+            margin: 0;
+            padding: 10px; } }
         @media (max-width: 480px) {
           .main-header-wrap > .main-header > .top > .right > .login-signup {
             margin: 0;
@@ -217,9 +235,15 @@ a, a:hover, a:active {
           color: #8e8e8e; }
     .main-header-wrap > .main-header > .bottom {
       margin-top: 15px; }
+      @media (max-width: 1000px) {
+        .main-header-wrap > .main-header > .bottom {
+          width: 100%; } }
       .main-header-wrap > .main-header > .bottom > .search-wrap {
         float: left;
         width: 85%; }
+        @media (max-width: 1000px) {
+          .main-header-wrap > .main-header > .bottom > .search-wrap {
+            padding: 10px; } }
         @media (max-width: 480px) {
           .main-header-wrap > .main-header > .bottom > .search-wrap {
             float: none;
@@ -231,6 +255,9 @@ a, a:hover, a:active {
           height: 40px;
           margin-right: 7px;
           text-align: center; }
+          @media (max-width: 1000px) {
+            .main-header-wrap > .main-header > .bottom > .search-wrap > .category {
+              width: 20%; } }
           @media (max-width: 480px) {
             .main-header-wrap > .main-header > .bottom > .search-wrap > .category {
               float: none;
@@ -245,6 +272,9 @@ a, a:hover, a:active {
             font-family: 'Roboto-Bold', Helvetica, Arial, sans-serif;
             font-size: 14px;
             color: #fff; }
+            @media (max-width: 1000px) {
+              .main-header-wrap > .main-header > .bottom > .search-wrap > .category > a {
+                width: 90%; } }
             @media (max-width: 480px) {
               .main-header-wrap > .main-header > .bottom > .search-wrap > .category > a {
                 width: 100%;
@@ -389,6 +419,9 @@ a, a:hover, a:active {
           .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs {
             float: left;
             width: 575px; }
+            @media (max-width: 1000px) {
+              .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs {
+                width: 60%; } }
             @media (max-width: 480px) {
               .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs {
                 float: none;
@@ -402,12 +435,15 @@ a, a:hover, a:active {
               border-radius: 0;
               outline: 0;
               font-size: 20px; }
+              @media (max-width: 1000px) {
+                .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs > input {
+                  width: 60%; } }
               @media (max-width: 480px) {
                 .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs > input {
                   width: 70%; } }
             .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs > .filter {
               float: right; }
-              @media (max-width: 480px) {
+              @media (max-width: 1000px) {
                 .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs > .filter {
                   width: 30%; } }
               .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs > .filter > a {
@@ -424,6 +460,9 @@ a, a:hover, a:active {
                     border-left: 0; } }
                 .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs > .filter > a > .caret {
                   margin-left: 70px; }
+                  @media (max-width: 1000px) {
+                    .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs > .filter > a > .caret {
+                      margin-left: 30px; } }
                   @media (max-width: 480px) {
                     .main-header-wrap > .main-header > .bottom > .search-wrap > .search > .inputs > .filter > a > .caret {
                       margin-left: 70px; } }
@@ -456,12 +495,20 @@ a, a:hover, a:active {
             color: #fff;
             border: none;
             outline: 0; }
+            @media (max-width: 1000px) {
+              .main-header-wrap > .main-header > .bottom > .search-wrap > .search > button {
+                width: 30%; } }
             @media (max-width: 480px) {
               .main-header-wrap > .main-header > .bottom > .search-wrap > .search > button {
                 float: none;
                 width: 100%; } }
       .main-header-wrap > .main-header > .bottom > .post-add {
         float: right; }
+        @media (max-width: 1000px) {
+          .main-header-wrap > .main-header > .bottom > .post-add {
+            width: 12%;
+            margin: 10px 3% 0 0;
+            text-align: center; } }
         @media (max-width: 480px) {
           .main-header-wrap > .main-header > .bottom > .post-add {
             width: 100%;
@@ -477,6 +524,9 @@ a, a:hover, a:active {
           color: #fff;
           border: none;
           outline: 0; }
+          @media (max-width: 1000px) {
+            .main-header-wrap > .main-header > .bottom > .post-add > a {
+              width: 100%; } }
           @media (max-width: 480px) {
             .main-header-wrap > .main-header > .bottom > .post-add > a {
               width: 90%;
@@ -494,6 +544,10 @@ a, a:hover, a:active {
       @media (max-width: 480px) {
         .main-footer > .top > .top-wrap {
           width: 100%; } }
+      @media (max-width: 1000px) {
+        .main-footer > .top > .top-wrap {
+          width: 100%;
+          padding: 10px; } }
       .main-footer > .top > .top-wrap > .about-us, .main-footer > .top > .top-wrap .contact-us, .main-footer > .top > .top-wrap .follow-us {
         float: left;
         width: 345px;
@@ -502,6 +556,10 @@ a, a:hover, a:active {
           .main-footer > .top > .top-wrap > .about-us, .main-footer > .top > .top-wrap .contact-us, .main-footer > .top > .top-wrap .follow-us {
             float: none;
             padding: 20px 20px 0; } }
+        @media (max-width: 1000px) {
+          .main-footer > .top > .top-wrap > .about-us, .main-footer > .top > .top-wrap .contact-us, .main-footer > .top > .top-wrap .follow-us {
+            width: 30%;
+            padding: 20px; } }
       .main-footer > .top > .top-wrap > .follow-us {
         width: 300px;
         padding-right: 0; }
@@ -509,6 +567,10 @@ a, a:hover, a:active {
           .main-footer > .top > .top-wrap > .follow-us {
             float: none;
             padding: 20px 0 20px 20px; } }
+        @media (max-width: 1000px) {
+          .main-footer > .top > .top-wrap > .follow-us {
+            width: 30%;
+            padding: 20px; } }
         .main-footer > .top > .top-wrap > .follow-us > .social {
           padding-top: 15px; }
           .main-footer > .top > .top-wrap > .follow-us > .social > a {
@@ -520,6 +582,9 @@ a, a:hover, a:active {
             background: #919191;
             text-align: center;
             color: #000; }
+            @media (max-width: 1000px) {
+              .main-footer > .top > .top-wrap > .follow-us > .social > a {
+                margin-right: 10px; } }
       .main-footer > .top > .top-wrap h4 {
         margin-bottom: 15px;
         text-transform: uppercase;
@@ -533,6 +598,11 @@ a, a:hover, a:active {
     height: 46px;
     margin: 0 auto; }
     @media (max-width: 480px) {
+      .main-footer > .bottom {
+        width: 100%;
+        height: 100%;
+        padding: 20px; } }
+    @media (max-width: 1000px) {
       .main-footer > .bottom {
         width: 100%;
         height: 100%;
@@ -574,14 +644,14 @@ a, a:hover, a:active {
   width: 100%;
   height: 371px;
   background: url("../img/main-banner-bg.jpg") no-repeat center center; }
-  @media (max-width: 480px) {
+  @media (max-width: 1000px) {
     .main-banner {
       width: 100%; } }
   .main-banner > .main-banner-wrap {
     width: 1000px;
     margin: 0 auto;
     overflow: hidden; }
-    @media (max-width: 480px) {
+    @media (max-width: 1000px) {
       .main-banner > .main-banner-wrap {
         width: 100%; } }
     .main-banner > .main-banner-wrap > h2 {
@@ -589,71 +659,83 @@ a, a:hover, a:active {
       text-align: center;
       font-size: 36px;
       color: #fff; }
-      @media (max-width: 480px) {
+      @media (max-width: 1000px) {
         .main-banner > .main-banner-wrap > h2 {
           margin-top: 50px;
           font-size: 18px; } }
     .main-banner > .main-banner-wrap > .category {
       margin-top: 50px; }
+      @media (max-width: 1000px) {
+        .main-banner > .main-banner-wrap > .category {
+          width: 480px;
+          margin: 50px auto; } }
       @media (max-width: 480px) {
         .main-banner > .main-banner-wrap > .category {
-          width: 275px;
-          margin: 0 auto; } }
-      .main-banner > .main-banner-wrap > .category > div > a {
-        width: 132px;
-        height: 119px;
-        display: inline-block;
-        border: 1px solid #fff;
-        text-align: center; }
+          width: 270px;
+          margin: 20px auto; } }
+      .main-banner > .main-banner-wrap > .category > div {
+        float: left;
+        margin-right: 40px; }
         @media (max-width: 480px) {
-          .main-banner > .main-banner-wrap > .category > div > a {
-            width: 100px;
-            height: 80px;
-            float: left;
-            margin: 5px 10px; } }
-        .main-banner > .main-banner-wrap > .category > div > a > .text {
-          color: #fff;
-          text-transform: uppercase;
+          .main-banner > .main-banner-wrap > .category > div {
+            margin-right: 10px; } }
+        .main-banner > .main-banner-wrap > .category > div > a {
+          width: 132px;
+          height: 119px;
+          display: inline-block;
+          border: 1px solid #fff;
           text-align: center; }
-          @media (max-width: 480px) {
-            .main-banner > .main-banner-wrap > .category > div > a > .text {
-              display: block;
-              font-size: 11px; } }
-        .main-banner > .main-banner-wrap > .category > div > a > .svg {
-          display: block;
-          margin: 10px 0;
-          text-align: center; }
-          @media (max-width: 480px) {
-            .main-banner > .main-banner-wrap > .category > div > a > .svg {
-              display: block;
-              height: 25px;
-              text-align: center; } }
-          .main-banner > .main-banner-wrap > .category > div > a > .svg > svg {
-            width: 50px;
-            height: 50px;
-            stroke: #fff; }
-            @media (max-width: 480px) {
-              .main-banner > .main-banner-wrap > .category > div > a > .svg > svg {
-                width: 30px;
-                height: 30px; } }
-        .main-banner > .main-banner-wrap > .category > div > a:hover {
-          border: 1px solid #ea1d28; }
-          .main-banner > .main-banner-wrap > .category > div > a:hover > .text {
-            color: #ea1d28; }
-          .main-banner > .main-banner-wrap > .category > div > a:hover > .svg > svg {
-            width: 50px;
-            height: 50px;
-            stroke: #ea1d28; }
-            @media (max-width: 480px) {
-              .main-banner > .main-banner-wrap > .category > div > a:hover > .svg > svg {
-                width: 30px;
-                height: 30px; } }
+          @media (max-width: 1000px) {
+            .main-banner > .main-banner-wrap > .category > div > a {
+              width: 100px;
+              height: 80px;
+              float: left;
+              margin: 5px 10px; } }
+          .main-banner > .main-banner-wrap > .category > div > a > .text {
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center; }
+            @media (max-width: 1000px) {
+              .main-banner > .main-banner-wrap > .category > div > a > .text {
+                display: block;
+                font-size: 11px; } }
+          .main-banner > .main-banner-wrap > .category > div > a > .svg {
+            display: block;
+            margin: 10px 0;
+            text-align: center; }
+            @media (max-width: 1000px) {
+              .main-banner > .main-banner-wrap > .category > div > a > .svg {
+                display: block;
+                height: 25px;
+                text-align: center; } }
+            .main-banner > .main-banner-wrap > .category > div > a > .svg > svg {
+              width: 50px;
+              height: 50px;
+              stroke: #fff; }
+              @media (max-width: 1000px) {
+                .main-banner > .main-banner-wrap > .category > div > a > .svg > svg {
+                  width: 30px;
+                  height: 30px; } }
+          .main-banner > .main-banner-wrap > .category > div > a:hover {
+            border: 1px solid #ea1d28; }
+            .main-banner > .main-banner-wrap > .category > div > a:hover > .text {
+              color: #ea1d28; }
+            .main-banner > .main-banner-wrap > .category > div > a:hover > .svg > svg {
+              width: 50px;
+              height: 50px;
+              stroke: #ea1d28; }
+              @media (max-width: 1000px) {
+                .main-banner > .main-banner-wrap > .category > div > a:hover > .svg > svg {
+                  width: 30px;
+                  height: 30px; } }
+        .main-banner > .main-banner-wrap > .category > div:last-child {
+          margin-right: 0; }
 
 .trending-ads {
   width: 1000px;
   margin: 0 auto;
   padding-top: 15px; }
-  @media (max-width: 480px) {
+  @media (max-width: 1000px) {
     .trending-ads {
       width: 100%;
       padding: 20px; } }
@@ -716,7 +798,7 @@ a, a:hover, a:active {
   width: 1000px;
   margin: 0 auto;
   padding-top: 40px; }
-  @media (max-width: 480px) {
+  @media (max-width: 1000px) {
     .popuplar-categories {
       width: 100%;
       padding: 20px; } }
@@ -729,7 +811,7 @@ a, a:hover, a:active {
     float: left;
     width: 319px;
     margin: 15px 21px 15px 0; }
-    @media (max-width: 480px) {
+    @media (max-width: 1000px) {
       .popuplar-categories > .content > dl {
         width: 100%; } }
     .popuplar-categories > .content > dl > dt {
