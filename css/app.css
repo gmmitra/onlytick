@@ -611,6 +611,11 @@ a, a:hover, a:active {
       float: left;
       list-style: none;
       padding: 0; }
+      @media (max-width: 665px) {
+        .main-footer > .bottom > ul {
+          float: none;
+          width: 480px;
+          margin: 0 auto 10px; } }
       @media (max-width: 480px) {
         .main-footer > .bottom > ul {
           float: none;
@@ -624,6 +629,9 @@ a, a:hover, a:active {
           line-height: 46px;
           font-size: 14px;
           color: #5a5a5a; }
+          @media (max-width: 665px) {
+            .main-footer > .bottom > ul > li > a {
+              padding: 0 41px; } }
           @media (max-width: 480px) {
             .main-footer > .bottom > ul > li > a {
               padding: 0 5px; } }
@@ -634,6 +642,11 @@ a, a:hover, a:active {
       line-height: 46px;
       font-size: 14px;
       color: #5a5a5a; }
+      @media (max-width: 665px) {
+        .main-footer > .bottom > .copyright {
+          float: none;
+          text-align: center;
+          line-height: 1; } }
       @media (max-width: 480px) {
         .main-footer > .bottom > .copyright {
           float: none;

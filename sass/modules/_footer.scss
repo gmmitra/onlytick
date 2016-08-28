@@ -97,10 +97,17 @@
       height: 100%;
       padding: 20px;
     }
+
     > ul {
       float: left;
       list-style: none;
       padding: 0;
+
+      @include breakpoint-up(665px) {
+        float: none;
+        width: 480px;
+        margin: 0 auto 10px;
+      }
 
       @include breakpoint-up(480px) {
         float: none;
@@ -117,6 +124,10 @@
           line-height: 46px;
           font-size: 14px;
           color: $gray-dark;
+
+          @include breakpoint-up(665px) {
+            padding: 0 41px;
+          }
 
           @include breakpoint-up(480px) {
             padding: 0 5px;
@@ -140,6 +151,12 @@
       line-height: 46px;
       font-size: 14px;
       color: $gray-dark;
+
+      @include breakpoint-up(665px) {
+        float: none;
+        text-align: center;
+        line-height: 1;
+      }
 
       @include breakpoint-up(480px) {
         float: none;
