@@ -19,17 +19,22 @@
 
       > dt {
         font-size: 17px;
-
-        > span {
-          margin: 0 10px;
-        }
-
         height: 39px;
         line-height: 39px;
         background: $red;
         @include font-roboto-bold();
         font-size: 16px;
         color: #fff;
+
+        > span {
+          width: 20px;
+          height: 20px;
+          margin: 0 10px;
+          display: inline-block;
+          vertical-align: -4px;
+          border: 1px solid #fff;
+        }
+
       }
 
       > dd {
