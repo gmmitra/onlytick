@@ -341,7 +341,7 @@
             }
 
             &:hover {
-              background: #fff;
+              background: #eceff2;
               color: $gray-dark;
             }
           }
@@ -350,7 +350,7 @@
             position: absolute;
             width: 250px;
             display: none;
-            background: #fff;
+            background: #eceff2;
             border-bottom: 1px solid #d1d1d1;
             border-left: 1px solid #d1d1d1;
             border-right: 1px solid #d1d1d1;
@@ -396,8 +396,8 @@
                   > .block {
                     position: absolute;
                     top: 0;
-                    left: -10px;
-                    width: 10px;
+                    left: -20px;
+                    width: 20px;
                     height: 38px;
                     display: inline-block;
                     background: #fff;
@@ -470,6 +470,7 @@
 
                 &:hover {
                   width: 260px;
+                  background: #fff;
                   box-shadow:
                     0px 14px 8px -10px $gray,
                     0px -14px 8px -10px $gray;
@@ -512,6 +513,7 @@
                   border-bottom: 1px solid $gray;
                   font-size: 14px;
                   color: $gray-dark;
+                  @include font-roboto();
 
                   &:hover {
                     text-decoration: none;
