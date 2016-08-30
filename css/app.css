@@ -732,13 +732,14 @@ a, a:hover, a:active {
                   width: 30px;
                   height: 30px; } }
           .main-banner > .main-banner-wrap > .category > div > a:hover {
-            border: 1px solid #ea1d28; }
+            border: 1px solid #ea1d28;
+            background: #ea1d28; }
             .main-banner > .main-banner-wrap > .category > div > a:hover > .text {
-              color: #ea1d28; }
+              color: #fff; }
             .main-banner > .main-banner-wrap > .category > div > a:hover > .svg > svg {
               width: 50px;
               height: 50px;
-              stroke: #ea1d28; }
+              stroke: #fff; }
               @media (max-width: 1000px) {
                 .main-banner > .main-banner-wrap > .category > div > a:hover > .svg > svg {
                   width: 30px;

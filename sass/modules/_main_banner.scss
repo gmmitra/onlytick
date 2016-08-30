@@ -99,9 +99,10 @@
 
           &:hover {
             border: 1px solid $red;
+            background: $red;
 
             > .text {
-              color: $red;
+              color: #fff;
             }
 
             > .svg {
@@ -109,7 +110,7 @@
               > svg {
                 width: 50px;
                 height: 50px;
-                stroke: $red;
+                stroke: #fff;
 
                 @include breakpoint-up(1000px) {
                   width: 30px;
