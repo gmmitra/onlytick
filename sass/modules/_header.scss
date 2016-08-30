@@ -1,12 +1,17 @@
 .main-header-wrap {
   width: 100%;
   margin-bottom: 14px;
+  display: block;
+
+  @include breakpoint-up(1000px) {
+    display: none;
+  }
 
   > .main-header {
     width: 1000px;
     margin: 0 auto;
 
-    @include breakpoint-up(1000px) {
+    @include breakpoint-up(480px) {
       width: 100%;
     }
 
@@ -16,10 +21,6 @@
         width: 65%;
         float: left;
 
-        @include breakpoint-up(1000px) {
-          width: 100%;
-        }
-
         @include breakpoint-up(480px) {
           width: 100%;
           float: none;
@@ -28,11 +29,6 @@
         > .main-logo {
           float: left;
           margin: 4px 18px 0 0;
-
-          @include breakpoint-up(1000px) {
-            float: none;
-            padding: 0 10px;
-          }
 
           @include breakpoint-up(480px) {
             float: none;
@@ -160,10 +156,6 @@
         width: 35%;
         float: right;
 
-        @include breakpoint-up(1000px) {
-          width: 100%;
-        }
-
         @include breakpoint-up(480px) {
           width: 100%;
           float: none;
@@ -173,11 +165,6 @@
         > .location-lang-wrap {
           float: left;
           margin: 23px 0 0 20px;
-
-          @include breakpoint-up(1000px) {
-            margin: 0 0 0 5px;
-            padding: 10px;
-          }
 
           @include breakpoint-up(480px) {
             margin: 0;
@@ -248,11 +235,6 @@
           margin: 23px 0 0;
           float: right;
 
-          @include breakpoint-up(1000px) {
-            margin: 0;
-            padding: 10px;
-          }
-
           @include breakpoint-up(480px) {
             margin: 0;
             padding: 10px;
@@ -282,17 +264,13 @@
     > .bottom {
       margin-top: 15px;
 
-      @include breakpoint-up(1000px) {
+      @include breakpoint-up(480px) {
         width: 100%;
       }
 
       > .search-wrap {
         float: left;
         width: 85%;
-
-        @include breakpoint-up(1000px) {
-          padding: 10px;
-        }
 
         @include breakpoint-up(480px) {
           float: none;
@@ -306,10 +284,6 @@
           height: 40px;
           margin-right: 7px;
           text-align: center;
-
-          @include breakpoint-up(1000px) {
-            width: 20%;
-          }
 
           @include breakpoint-up(480px) {
             float: none;
@@ -326,10 +300,6 @@
             @include font-roboto-bold();
             font-size: 14px;
             color: #fff;
-
-            @include breakpoint-up(1000px) {
-              width: 90%;
-            }
 
             @include breakpoint-up(480px) {
               width: 100%;
@@ -551,10 +521,6 @@
             float: left;
             width: 575px;
 
-            @include breakpoint-up(1000px) {
-              width: 60%;
-            }
-
             @include breakpoint-up(480px) {
               float: none;
               width: 100%;
@@ -570,10 +536,6 @@
               outline: 0;
               font-size: 20px;
 
-              @include breakpoint-up(1000px) {
-                width: 60%;
-              }
-
               @include breakpoint-up(480px) {
                 width: 70%;
               }
@@ -582,7 +544,7 @@
             > .filter {
               float: right;
 
-              @include breakpoint-up(1000px) {
+              @include breakpoint-up(480px) {
                 width: 30%;
               }
 
@@ -602,10 +564,6 @@
 
                 > .caret {
                   margin-left: 70px;
-
-                  @include breakpoint-up(1000px) {
-                    margin-left: 30px;
-                  }
 
                   @include breakpoint-up(480px) {
                     margin-left: 70px;
@@ -658,10 +616,6 @@
             border: none;
             outline: 0;
 
-            @include breakpoint-up(1000px) {
-              width: 30%;
-            }
-
             @include breakpoint-up(480px) {
               float: none;
               width: 100%;
@@ -672,12 +626,6 @@
 
       > .post-add {
         float: right;
-
-        @include breakpoint-up(1000px) {
-          width: 12%;
-          margin: 10px 3% 0 0;
-          text-align: center;
-        }
 
         @include breakpoint-up(480px) {
           width: 100%;
@@ -696,10 +644,6 @@
           border: none;
           outline: 0;
 
-          @include breakpoint-up(1000px) {
-            width: 100%;
-          }
-
           @include breakpoint-up(480px) {
             width: 90%;
             height: 60px;
@@ -707,6 +651,259 @@
             font-size: 18px;
           }
         }
+      }
+    }
+  }
+}
+
+.main-header-wrap-mobile {
+  position: relative;
+  display: none;
+  padding: 10px;
+
+  @include breakpoint-up(1000px) {
+    display: block;
+  }
+
+  > .top {
+
+    > .main-logo {
+      position: absolute;
+      margin: 0;
+      top: 0;
+      left: 50%;
+      margin-left: -48px;
+    }
+
+    > .open-nav {
+      float: left;
+      width: 35px;
+      height: 30px;
+      padding: 0;
+      border: 1px solid #333;
+      background: none;
+      outline: 0;
+      -webkit-appearance: none;
+
+      > span {
+        width: 22px;
+        height: 2px;
+        margin: 4px auto;
+        display: block;
+        border-radius: 1px;
+        background-color: #333;
+      }
+
+      &:hover {
+        border: 1px solid $red;
+
+        > span {
+          background-color: $red;
+        }
+      }
+    }
+
+    > .more-wrap {
+      float: right;
+
+      > button {
+        width: 35px;
+        height: 30px;
+        padding: 0;
+        background: none;
+        border: none;
+        -webkit-appearance: none;
+        outline: 0;
+        font-size: 24px;
+
+        &:hover {
+          color: $red;
+        }
+      }
+
+      > .post-ad {
+        color: $red;
+      }
+    }
+
+    > .sub-menu-mobile-wrap {
+      position: absolute;
+      top: 45px;
+      left: 0;
+      width: 100%;
+      display: none;
+      background: #fff;
+      z-index: 5;
+      padding: 10px;
+      border: 0;
+      border-bottom: 1px solid $gray;
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .nav {
+
+        > .login-signup {
+          width: 100%;
+          padding: 10px 0;
+
+          > a {
+            display: inline;
+            padding: 10px 0;
+
+            > span {
+              margin-right: 10px;
+            }
+
+            &:hover {
+              background: none;
+              color: #000;
+            }
+          }
+
+          .sep {
+            margin: 0 5px;
+          }
+        }
+
+        > .location, > .lang {
+          width: 100%;
+
+          > a {
+            padding: 10px 0;
+
+            > img {
+              margin-right: 5px;
+            }
+
+            &:hover {
+              background: none;
+              color: #000;
+            }
+          }
+        }
+
+        > li {
+          width: 100%;
+          border-bottom: 1px solid $red;
+          font-size: 16px;
+          color: #000;
+
+          > a {
+            width: 100%;
+            padding: 10px 15px;
+            display: inline-block;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #000;
+
+            &:hover {
+              background: $red;
+              color: #fff;
+            }
+          }
+
+          > .third-menu {
+            display: none;
+
+            > .cols {
+
+              > p {
+                padding: 5px 0;
+                font-size: 18px;
+                @include font-roboto-bold();
+              }
+
+              > ul {
+                list-style: none;
+                padding: 0;
+                -webkit-columns: 150px 2;
+                   -moz-columns: 150px 2;
+                        columns: 150px 2;
+
+                > li {
+
+                  > a {
+                    padding: 3px 0;
+                    display: inline-block;
+                    color: #000;
+
+                    > span {
+                      color: $gray;
+                    }
+
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover {
+
+            > .third-menu {
+              position: relative;
+              width: 100%;
+              display: block;
+              padding: 10px;
+              -webkit-columns: 150px 2;
+                 -moz-columns: 150px 2;
+                      columns: 150px 2;
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > .bottom {
+    width: 100%;
+    margin-top: 10px;
+
+    > .category {
+      float: left;
+      width: 20%;
+      height: 30px;
+      margin-right: 2%;
+      line-height: 30px;
+      display: inline-block;
+      background: #a1a7ac;
+      @include font-roboto();
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+
+      > span {
+        @include breakpoint-up(480px) {
+          display: none;
+        }
+      }
+    }
+
+    > .inputs {
+      position: relative;
+      float: left;
+      width: 78%;
+      padding: 3px 10px;
+      border: 2px solid $red;
+      border-radius: 15px;
+
+      > i {
+        position: absolute;
+        top: 6px;
+        color: $red;
+      }
+
+      > input {
+        width: 100%;
+        padding-left: 20px;
+        border: none;
+        outline: none;
       }
     }
   }
