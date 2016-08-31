@@ -870,7 +870,8 @@ a, a:hover, a:active {
             @media (max-width: 1000px) {
               .main-banner > .main-banner-wrap > .category > div > a > .text {
                 display: block;
-                font-size: 11px; } }
+                font-size: 11px;
+                line-height: 1; } }
           .main-banner > .main-banner-wrap > .category > div > a > .svg {
             display: block;
             margin: 22px 0 5px;
