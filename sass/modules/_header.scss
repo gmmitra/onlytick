@@ -177,6 +177,7 @@
 
         > .location-lang-wrap {
           float: left;
+          width: 40%;
           margin: 23px 0 0 20px;
 
           @include breakpoint-up(480px) {
@@ -249,6 +250,7 @@
         }
 
         > .login-signup {
+          width: 50%;
           margin: 23px 0 0;
           float: right;
 
@@ -365,11 +367,26 @@
                 padding: 0 17px;
 
                 > a {
+                  position: relative;
+                  width: 100%;
+                  padding: 9px 0 9px 30px;
+                  display: inline-block;
+                  border-bottom: 1px solid $gray;
+                  font-size: 14px;
+                  color: $gray-dark;
+                  @include font-roboto();
 
                   > svg {
-                    fill: #000;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
                     margin-right: 10px;
-                    vertical-align: -5px;
+                    fill: #000;
+                  }
+
+                  &:hover {
+                    text-decoration: none;
+                    color: $red;
                   }
                 }
 
@@ -409,7 +426,7 @@
                     top: 0;
                     left: -20px;
                     width: 20px;
-                    height: 39px;
+                    height: 38px;
                     display: inline-block;
                     background: #fff;
                     z-index: 5;
@@ -424,23 +441,23 @@
                   }
 
                   > .pfr {
-                    top: 57px;
+                    top: 56px;
                   }
 
                   > .motors {
-                    top: 97px;
+                    top: 95px;
                   }
 
                   > .jobs {
-                    top: 137px;
+                    top: 134px;
                   }
 
                   > .class {
-                    top: 177px;
+                    top: 173px;
                   }
 
                   > .serv {
-                    top: 217px;
+                    top: 212px;
                   }
 
                   > ul {
@@ -518,23 +535,6 @@
 
                   > a {
                     border-bottom: 0;
-                  }
-                }
-
-                > a {
-                  width: 100%;
-                  padding: 9px 0;
-                  display: inline-block;
-                  border-bottom: 1px solid $gray;
-                  font-size: 14px;
-                  color: $gray-dark;
-                  @include font-roboto();
-
-
-
-                  &:hover {
-                    text-decoration: none;
-                    color: $red;
                   }
                 }
 
