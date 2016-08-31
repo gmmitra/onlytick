@@ -674,7 +674,7 @@ a, a:hover, a:active {
     .main-header-wrap-mobile > .bottom > .inputs {
       position: relative;
       float: left;
-      width: 78%;
+      width: 100%;
       padding: 3px 10px;
       border: 2px solid #ea1d28;
       border-radius: 15px; }
