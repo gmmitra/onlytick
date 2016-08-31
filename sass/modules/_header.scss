@@ -58,7 +58,7 @@
             > a {
               padding: 10px 15px;
               display: inline-block;
-              font-size: 16px;
+              font-size: 14px;
               text-transform: uppercase;
               color: #000;
 
@@ -66,8 +66,12 @@
                 width: 100%;
                 border-bottom: 1px solid $red;
               }
+            }
 
-              &:hover {
+            &:hover {
+
+              > a {
+                text-decoration: none;
                 background: $red;
                 color: #fff;
               }
@@ -77,7 +81,7 @@
               position: absolute;
               width: 885px;
               display: none;
-              padding: 10px 30px;
+              padding: 10px 0;
               z-index: 5;
               border-top: 2px solid $red;
               background: #fff;
@@ -103,9 +107,10 @@
               }
 
               > .cols {
+                padding: 0 30px;
 
                 > p {
-                  padding: 15px 0;
+                  padding: 10px 0 5px;
                   font-size: 18px;
                   @include font-roboto-bold();
 
@@ -125,7 +130,7 @@
                   > li {
 
                     > a {
-                      padding: 5px 0;
+                      padding: 5px 5px;
                       display: inline-block;
                       color: #000;
 
@@ -134,12 +139,20 @@
                       }
 
                       &:hover {
-                        text-decoration: underline;
+                        background: #f0f0f0;
                       }
                     }
                   }
                 }
+
+                &:first-child {
+                  border-right: 1px solid #f0f0f0;
+                }
               }
+            }
+
+            > .classification {
+              left: -250px;
             }
 
             &:hover {
@@ -174,12 +187,16 @@
           > a {
             position: relative;
             display: inline-block;
-            font-size: 16px;
+            font-size: 14px;
             color: $gray;
             text-transform: uppercase;
 
             > .text {
               margin-right: 5px;
+            }
+
+            > img {
+              vertical-align: -2px;
             }
 
             > .sub-menu {
@@ -241,12 +258,13 @@
           }
 
           > a {
-            font-size: 16px;
+            font-size: 14px;
             color: $gray;
             text-transform: uppercase;
 
-            > .glyphicon {
+            > img {
               margin-right: 5px;
+              vertical-align: -2px;
               font-size: 13px;
             }
           }
@@ -309,8 +327,11 @@
             > i {
               margin-right: 10px;
             }
+          }
 
-            &:hover {
+          &:hover {
+
+            > a {
               background: #eceff2;
               color: $gray-dark;
             }
@@ -343,6 +364,26 @@
                 text-align: left;
                 padding: 0 17px;
 
+                > a {
+
+                  > svg {
+                    fill: #000;
+                    margin-right: 10px;
+                    vertical-align: -5px;
+                  }
+                }
+
+                &:hover {
+
+                  > a {
+                    color: $red;
+
+                    > svg {
+                      fill: $red;
+                    }
+                  }
+                }
+
                 > .third-nav {
                   width: 600px;
                   position: absolute;
@@ -368,7 +409,7 @@
                     top: 0;
                     left: -20px;
                     width: 20px;
-                    height: 38px;
+                    height: 39px;
                     display: inline-block;
                     background: #fff;
                     z-index: 5;
@@ -383,23 +424,23 @@
                   }
 
                   > .pfr {
-                    top: 56px;
+                    top: 57px;
                   }
 
                   > .motors {
-                    top: 95px;
+                    top: 97px;
                   }
 
                   > .jobs {
-                    top: 134px;
+                    top: 137px;
                   }
 
                   > .class {
-                    top: 173px;
+                    top: 177px;
                   }
 
                   > .serv {
-                    top: 212px;
+                    top: 217px;
                   }
 
                   > ul {
@@ -432,6 +473,10 @@
                         &:hover {
                           text-decoration: underline;
                           color: $red;
+
+                          > span {
+                            color: $red;
+                          }
                         }
                       }
                     }
@@ -484,6 +529,8 @@
                   font-size: 14px;
                   color: $gray-dark;
                   @include font-roboto();
+
+
 
                   &:hover {
                     text-decoration: none;
@@ -753,6 +800,11 @@
             display: inline;
             padding: 10px 0;
 
+            > img {
+              margin-right: 10px;
+              vertical-align: 0;
+            }
+
             > span {
               margin-right: 10px;
             }
@@ -776,6 +828,7 @@
 
             > img {
               margin-right: 5px;
+              vertical-align: -2px;
             }
 
             &:hover {
