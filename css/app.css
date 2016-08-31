@@ -832,6 +832,9 @@ a, a:hover, a:active {
         .main-banner > .main-banner-wrap > h2 {
           margin-top: 50px;
           font-size: 18px; } }
+      @media (max-width: 480px) {
+        .main-banner > .main-banner-wrap > h2 {
+          font-size: 17px; } }
     .main-banner > .main-banner-wrap > .category {
       margin-top: 50px; }
       @media (max-width: 1000px) {
