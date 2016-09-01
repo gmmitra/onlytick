@@ -1070,17 +1070,19 @@ a, a:hover, a:active, a:focus {
     .popuplar-categories > .content > dl:last-child {
       margin-right: 0; }
 
-.modal-content {
-  border-radius: 0; }
-  .modal-content > .modal-header {
-    padding: 10px 15px;
-    background: #43464b; }
-    .modal-content > .modal-header > h4.modal-title {
-      color: #fff;
-      font-size: 16px; }
-    .modal-content > .modal-header > .close {
-      color: #fff;
-      opacity: 1; }
+.modal {
+  background: rgba(255, 255, 255, 0.8); }
+  .modal .modal-content {
+    border-radius: 0; }
+    .modal .modal-content > .modal-header {
+      padding: 10px 15px;
+      background: #43464b; }
+      .modal .modal-content > .modal-header > h4.modal-title {
+        color: #fff;
+        font-size: 16px; }
+      .modal .modal-content > .modal-header > .close {
+        color: #fff;
+        opacity: 1; }
 
 /* Pages */
 .modal-body > .login-social {
