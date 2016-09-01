@@ -134,7 +134,7 @@
               </a>
             </div>
             <div class="login-signup">
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#loginModal">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="15px" height="15px" viewBox="0 0 2.395 2.652" enable-background="new 0 0 2.395 2.652" xml:space="preserve">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M1.556,1.438c0.187,0.059,0.354,0.162,0.488,0.296
@@ -566,7 +566,7 @@
         <div class="sub-menu-mobile-wrap" id="mobile-more">
           <ul class="nav">
             <li class="login-signup">
-              <a href="#"><img src="img/svg/user.svg">Login</a>
+              <a href="#" data-toggle="modal" data-target="#loginModal"><img src="img/svg/user.svg">Login</a>
               <span class="sep">|</span>
               <a href="#">Join Free</a>
             </li>
@@ -1076,81 +1076,83 @@
     </div>
 
     <div class="trending-ads">
-      <h2>Trending Ads</h2>
+      <div class="trending-ads-wrap">
+        <h2>Trending Ads</h2>
 
-      <div class="content clearfix">
-        <a href="#" class="item">
-          <div class="overlay"></div>
-          <p class="title">Volkswagen Polo 1.2</p>
-          <div class="location-time clearfix">
-            <span class="location"><img src="img/svg/marker.svg">Deira</span>
-            <span class="time">7 Hours</span>
-          </div>
-          <img src="img/trending-item-1.jpg">
-        </a>
-        <a href="#" class="item">
-          <div class="overlay"></div>
-          <p class="title">Lego Castle Block</p>
-          <div class="location-time clearfix">
-            <span class="location"><img src="img/svg/marker.svg">Al Barsha</span>
-            <span class="time">5 Hours</span>
-          </div>
-          <img src="img/trending-item-2.jpg">
-        </a>
-        <a href="#" class="item">
-          <div class="overlay"></div>
-          <p class="title">Dining Table Set</p>
-          <div class="location-time clearfix">
-            <span class="location"><img src="img/svg/marker.svg">Jumeira</span>
-            <span class="time">5 Hours</span>
-          </div>
-          <img src="img/trending-item-3.jpg">
-        </a>
-        <a href="#" class="item">
-          <div class="overlay"></div>
-          <p class="title">PS4 Games Cheat</p>
-          <div class="location-time clearfix">
-            <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
-            <span class="time">10 Hours</span>
-          </div>
-          <img src="img/trending-item-4.jpg">
-        </a>
-        <a href="#" class="item">
-          <div class="overlay"></div>
-          <p class="title">Apartment For Rent</p>
-          <div class="location-time clearfix">
-            <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
-            <span class="time">10 Hours</span>
-          </div>
-          <img src="img/trending-item-5.jpg">
-        </a>
-        <a href="#" class="item">
-          <div class="overlay"></div>
-          <p class="title">Dell Inspiron 15 7000</p>
-          <div class="location-time clearfix">
-            <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
-            <span class="time">10 Hours</span>
-          </div>
-          <img src="img/trending-item-6.jpg">
-        </a>
-        <a href="#" class="item">
-          <div class="overlay"></div>
-          <p class="title">Bajaj Pulsar</p>
-          <div class="location-time clearfix">
-            <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
-            <span class="time">10 Hours</span>
-          </div>
-          <img src="img/trending-item-7.jpg">
-        </a>
-        <a href="#" class="item">
-          <div class="overlay"></div>
-          <p class="title">Ultra-Slim Wireless Charger</p>
-          <div class="location-time clearfix">
-            <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
-            <span class="time">10 Hours</span>
-          </div>
-          <img src="img/trending-item-8.jpg">
-        </a>
+        <div class="content clearfix">
+          <a href="#" class="item">
+            <div class="overlay"></div>
+            <p class="title">Volkswagen Polo 1.2</p>
+            <div class="location-time clearfix">
+              <span class="location"><img src="img/svg/marker.svg">Deira</span>
+              <span class="time">7 Hours</span>
+            </div>
+            <img src="img/trending-item-1.jpg">
+          </a>
+          <a href="#" class="item">
+            <div class="overlay"></div>
+            <p class="title">Lego Castle Block</p>
+            <div class="location-time clearfix">
+              <span class="location"><img src="img/svg/marker.svg">Al Barsha</span>
+              <span class="time">5 Hours</span>
+            </div>
+            <img src="img/trending-item-2.jpg">
+          </a>
+          <a href="#" class="item">
+            <div class="overlay"></div>
+            <p class="title">Dining Table Set</p>
+            <div class="location-time clearfix">
+              <span class="location"><img src="img/svg/marker.svg">Jumeira</span>
+              <span class="time">5 Hours</span>
+            </div>
+            <img src="img/trending-item-3.jpg">
+          </a>
+          <a href="#" class="item">
+            <div class="overlay"></div>
+            <p class="title">PS4 Games Cheat</p>
+            <div class="location-time clearfix">
+              <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
+              <span class="time">10 Hours</span>
+            </div>
+            <img src="img/trending-item-4.jpg">
+          </a>
+          <a href="#" class="item">
+            <div class="overlay"></div>
+            <p class="title">Apartment For Rent</p>
+            <div class="location-time clearfix">
+              <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
+              <span class="time">10 Hours</span>
+            </div>
+            <img src="img/trending-item-5.jpg">
+          </a>
+          <a href="#" class="item">
+            <div class="overlay"></div>
+            <p class="title">Dell Inspiron 15 7000</p>
+            <div class="location-time clearfix">
+              <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
+              <span class="time">10 Hours</span>
+            </div>
+            <img src="img/trending-item-6.jpg">
+          </a>
+          <a href="#" class="item">
+            <div class="overlay"></div>
+            <p class="title">Bajaj Pulsar</p>
+            <div class="location-time clearfix">
+              <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
+              <span class="time">10 Hours</span>
+            </div>
+            <img src="img/trending-item-7.jpg">
+          </a>
+          <a href="#" class="item">
+            <div class="overlay"></div>
+            <p class="title">Ultra-Slim Wireless Charger</p>
+            <div class="location-time clearfix">
+              <span class="location"><img src="img/svg/marker.svg">Burdubai</span>
+              <span class="time">10 Hours</span>
+            </div>
+            <img src="img/trending-item-8.jpg">
+          </a>
+        </div>
       </div>
     </div>
 
@@ -1255,8 +1257,59 @@
         <p class="copyright">&copy; 2016 Winsoft Solutions. ALl rights reserved.</p>
       </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="loginModalLabel">Login to Onlytick</h4>
+          </div>
+          <div class="modal-body">
+            <div class="login-social">
+              <a href="#" class="login-facebook clearfix">
+                <span class="text">Login with Facebook</span>
+                <span class="image"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+              </a>
+            </div>
+            <div class="login-social">
+              <a href="#" class="login-google-plus clearfix">
+                <span class="text">Login with Google Plus</span>
+                <span class="image"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+              </a>
+            </div>
+            <p class="sep">OR</p>
+            <p class="inputs"><input type="text" name="" placeholder="USERNAME"></p>
+            <p class="inputs"><input type="password" name="" placeholder="PASSWORD"></p>
+            <p class="inputs"><button class="button">Login</button></p>
+            <div class="links clearfix">
+              <a href="#" class="forget" data-toggle="modal" data-target="#resetPasswordModal">Forget Password</a>
+              <a href="#" class="sign-up">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="resetPasswordModal" tabindex="-1" role="dialog" aria-labelledby="resetPasswordModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="resetPasswordModalLabel">Reset Your Password</h4>
+          </div>
+          <div class="modal-body">
+            <p>Once clicked, an email will be sent to rest the Password.</p>
+            <p class="inputs"><input type="text" name="" placeholder="Email Address"></p>
+            <p class="inputs"><button class="button">Reset my Password</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
   </main>
   <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
