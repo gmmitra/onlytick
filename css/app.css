@@ -39,8 +39,9 @@ html, body, main {
 * {
   font-family: 'Roboto', Helvetica, Arial, sans-serif; }
 
-a, a:hover, a:active {
-  text-decoration: none; }
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+  outline: none; }
 
 .-italic {
   font-style: italic; }
