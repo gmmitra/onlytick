@@ -1,0 +1,91 @@
+.modal-body {
+
+  > .login-social {
+    margin-bottom: 10px;
+
+    > .login-facebook {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+
+      > .text {
+        float: left;
+        width: 80%;
+        padding: 8px 15px;
+        background: #4b6cc9;
+        color: #fff;
+      }
+
+      > .image {
+        float: right;
+        width: 20%;
+        padding: 8px;
+        background: #3c56a0;
+        text-align: center;
+        color: #fff;
+      }
+    }
+
+    > .login-google-plus {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+
+      > .text {
+        float: left;
+        width: 80%;
+        padding: 8px 15px;
+        background: #ee5665;
+        color: #fff;
+      }
+
+      > .image {
+        float: right;
+        width: 20%;
+        padding: 8px;
+        background: #bf4552;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+
+  > .sep {
+    text-align: center;
+    color: $gray;
+  }
+
+  > .inputs {
+
+    > input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid $gray;
+    }
+
+    > button {
+      width: 100%;
+      padding: 8px;
+      background: $red;
+      outline: 0;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+
+  > .links {
+
+    > .forget {
+      float: left;
+      color: $gray;
+      text-transform: uppercase;
+    }
+
+    > .sign-up {
+      float: right;
+      color: $gray;
+      text-transform: uppercase;
+    }
+  }
+}
