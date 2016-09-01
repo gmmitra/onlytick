@@ -211,9 +211,11 @@
 
               > ul {
                 list-style: none;
-                padding: 0 0 0 17px;
+                padding: 3px 0 0 17px;
 
                 > li {
+                  display: block;
+                  padding: 3px 0;
                   font-size: 13px;
 
                   &:hover {
@@ -238,7 +240,7 @@
               width: 70px;
 
               > ul {
-                padding: 0 0 0 12px;
+                padding: 3px 0 0 12px;
               }
             }
           }
@@ -250,7 +252,7 @@
         }
 
         > .login-signup {
-          width: 50%;
+          width: 44%;
           margin: 23px 0 0;
           float: right;
 
@@ -264,10 +266,19 @@
             color: $gray;
             text-transform: uppercase;
 
-            > img {
+            > svg {
               margin-right: 5px;
               vertical-align: -2px;
               font-size: 13px;
+              fill: #000;
+            }
+
+            &:hover {
+              color: $red;
+
+              > svg {
+                fill: $red;
+              }
             }
           }
 
@@ -590,65 +601,20 @@
 
             > .filter {
               float: right;
+              width: 118px;
+              height: 36px;
+              padding: 0 0 0 10px;
+              display: inline-block;
+              line-height: 36px;
+              border: none;
+              outline: 0;
+              font-size: 16px;
+              border-left: 1px solid #d1d1d1;
+              color: $gray-dark;
 
               @include breakpoint-up(480px) {
-                width: 30%;
-              }
-
-              > a {
-                width: 118px;
-                padding: 0 0 0 10px;
-                display: inline-block;
-                line-height: 36px;
-                font-size: 16px;
-                border-left: 1px solid #d1d1d1;
-                color: $gray-dark;
-
-                @include breakpoint-up(480px) {
-                  width: 100%;
-                  border-left: 0;
-                }
-
-                > .caret {
-                  margin-left: 70px;
-
-                  @include breakpoint-up(480px) {
-                    margin-left: 70px;
-                  }
-                }
-              }
-
-              > .sub-menu {
-                position: absolute;
-                width: 118px;
-                display: none;
-                background: #fff;
-                border-bottom: 1px solid #d1d1d1;
-                border-left: 1px solid #d1d1d1;
-                border-right: 1px solid #d1d1d1;
-                > ul {
-                  list-style: none;
-                  padding: 0 0 0 10px;
-
-                  > li {
-                    font-size: 13px;
-
-                    &:hover {
-                      text-decoration: underline;
-                    }
-                  }
-                }
-              }
-
-              &:hover {
-
-                > .sub-menu {
-                  display: block;
-
-                  @include breakpoint-up(480px) {
-                    width: 30%;
-                  }
-                }
+                width: 100%;
+                border-left: 0;
               }
             }
           }
@@ -706,13 +672,14 @@
 .main-header-wrap-mobile {
   position: relative;
   display: none;
-  padding: 10px;
+  margin: 10px 0;
 
   @include breakpoint-up(1000px) {
     display: block;
   }
 
   > .top {
+    padding: 10px;
 
     > .main-logo {
       position: absolute;
@@ -790,7 +757,7 @@
         padding: 0;
       }
 
-      .nav {
+      > .nav {
 
         > .login-signup {
           width: 100%;
@@ -798,7 +765,7 @@
 
           > a {
             display: inline;
-            padding: 10px 0;
+            padding: 10px;
 
             > img {
               margin-right: 10px;
@@ -808,15 +775,18 @@
             > span {
               margin-right: 10px;
             }
-
-            &:hover {
-              background: none;
-              color: #000;
-            }
           }
 
-          .sep {
-            margin: 0 5px;
+          &:hover {
+
+            > a {
+              background: none;
+              color: #000;
+
+              > svg {
+                fill: #000;
+              }
+            }
           }
         }
 
@@ -824,16 +794,24 @@
           width: 100%;
 
           > a {
-            padding: 10px 0;
+            padding: 10px;
 
-            > img {
+            > svg {
               margin-right: 5px;
               vertical-align: -2px;
+              fill: #000;
             }
+          }
 
-            &:hover {
-              background: none;
-              color: #000;
+          &:hover {
+
+            > a {
+              background: $red;
+              color: #fff;
+
+              > svg {
+                fill: #fff;
+              }
             }
           }
         }
@@ -851,8 +829,10 @@
             font-size: 16px;
             text-transform: uppercase;
             color: #000;
+          }
 
-            &:hover {
+          &:hover {
+            > a {
               background: $red;
               color: #fff;
             }
@@ -915,8 +895,9 @@
   }
 
   > .bottom {
+    position: relative;
     width: 100%;
-    margin-top: 10px;
+    padding: 10px;
 
     > .category {
       float: left;
@@ -941,7 +922,7 @@
     > .inputs {
       position: relative;
       float: left;
-      width: 100%;
+      width: 77%;
       padding: 3px 10px;
       border: 2px solid $red;
       border-radius: 15px;
@@ -957,6 +938,90 @@
         padding-left: 20px;
         border: none;
         outline: none;
+      }
+    }
+
+    > .sub-menu {
+      position: absolute;
+      top: 42px;
+      left: 0;
+      width: 100%;
+      display: none;
+      z-index: 3;
+      background: #fff;
+
+      > ul {
+        list-style: none;
+        padding: 10px 10px 0;
+
+        > li {
+          width: 100%;
+          border-bottom: 1px solid $red;
+          font-size: 16px;
+          color: #000;
+
+          > a {
+            width: 100%;
+            padding: 10px 5px;
+            display: inline-block;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #000;
+
+            > svg {
+              margin-right: 5px;
+              vertical-align: -3px;
+            }
+          }
+
+          &:hover {
+
+            > a {
+              background: $red;
+              color: #fff;
+
+              > svg {
+                fill: #fff;
+              }
+            }
+          }
+
+          > .third-nav {
+            display: none;
+            background: #fff;
+
+            > ul {
+              list-style: none;
+              padding: 10px 0;
+              -webkit-columns: 150px 2;
+                 -moz-columns: 150px 2;
+                      columns: 150px 2;
+
+              > li {
+                padding: 3px 15px;
+
+                > a {
+                  color: #000;
+
+                  > span {
+                    color: $gray;
+                  }
+
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+
+          &:hover {
+
+            > .third-nav {
+              display: block;
+            }
+          }
+        }
       }
     }
   }
