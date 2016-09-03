@@ -1,0 +1,87 @@
+.sign-up-wrap {
+  width: 367px;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  > h2 {
+    margin: 20px 0 40px;
+    text-align: center;
+  }
+
+  > .sign-up-facebook {
+    width: 100%;
+    background: #3a5799;
+    border-radius: 3px;
+
+    > a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      font-size: 13px;
+
+      > i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  > .sign-up-google-plus {
+    width: 100%;
+    margin: 10px 0;
+    background: #d5472f;
+    border-radius: 3px;
+
+    > a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      font-size: 13px;
+
+      > i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  > .sep {
+    margin: 20px 0;
+    text-align: center;
+    background: url('../img/sep-bg.png') no-repeat center center;
+    color: $gray;
+    font-size: 12px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .captcha {
+    margin: 20px 0;
+  }
+
+  .agree {
+    width: 240px;
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: 13px;
+    color: $gray;
+
+    > a {
+      color: $gray;
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    width: 224px;
+    height: 36px;
+    margin: 30px auto;
+    text-transform: uppercase;
+    background: $red;
+    border: none;
+
+    &:hover {
+      background: $red;
+    }
+  }
+}
