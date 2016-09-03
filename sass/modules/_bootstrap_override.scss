@@ -1,0 +1,58 @@
+.modal {
+  background: rgba(255, 255, 255, 0.8);
+
+  .modal-content {
+    border-radius: 0;
+
+    > .modal-header {
+      padding: 10px 15px;
+      background: #43464b;
+
+      > h4.modal-title {
+        color: #fff;
+        font-size: 16px;
+      }
+
+      > .close {
+        color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.form-control {
+  border-radius: 0;
+  color: $gray;
+}
+
+label {
+  color: $gray;
+  font-weight: 400;
+}
+
+.radio-inline {
+  margin: 8px 0;
+
+  > .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    display: inline-block;
+    background: url('../img/rdo-default.png');
+  }
+
+  > input[type=radio] {
+    display: none;
+  }
+
+  > input[type=radio]:checked + .image {
+    background: url('../img/rdo-active.png');
+  }
+}
