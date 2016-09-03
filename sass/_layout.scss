@@ -3,3 +3,44 @@
   width: 100%;
   background: $wrap-bg;
 }
+
+.wrap-no-bg {
+  width: 100%;
+  border-top: 1px solid #dadee1;
+}
+
+.wrap-with-breadcrumbs {
+  width: 100%;
+  background: $wrap-bg;
+  border-top: 1px solid #dadee1;
+
+  > .breadcrumbs {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dedfe1;
+
+    > .breadcrumbs-wrap {
+      width: 1000px;
+      height: 36px;
+      line-height: 36px;
+      margin: 0 auto;
+      @extend %ellipsis;
+
+      @include breakpoint-up(1000px) {
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      > span {
+        color: $gray-dark;
+      }
+
+      > .sep {
+        margin: 0 3px 0 5px;
+        display: inline-block;
+        vertical-align: 1px;
+      }
+    }
+  }
+}
+

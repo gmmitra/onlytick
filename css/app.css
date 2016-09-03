@@ -9,7 +9,7 @@
 
 /* Mixins*/
 /* Reusable Classes */
-.trending-ads > .trending-ads-wrap > .content > .item > .title {
+.wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap, .trending-ads > .trending-ads-wrap > .content > .item > .title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -53,6 +53,34 @@ a, a:hover, a:active, a:focus {
 .wrap {
   width: 100%;
   background: #f3f6f9; }
+
+.wrap-no-bg {
+  width: 100%;
+  border-top: 1px solid #dadee1; }
+
+.wrap-with-breadcrumbs {
+  width: 100%;
+  background: #f3f6f9;
+  border-top: 1px solid #dadee1; }
+  .wrap-with-breadcrumbs > .breadcrumbs {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dedfe1; }
+    .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap {
+      width: 1000px;
+      height: 36px;
+      line-height: 36px;
+      margin: 0 auto; }
+      @media (max-width: 1000px) {
+        .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap {
+          width: 100%;
+          padding: 0 10px; } }
+      .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap > span {
+        color: #5a5a5a; }
+      .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap > .sep {
+        margin: 0 3px 0 5px;
+        display: inline-block;
+        vertical-align: 1px; }
 
 /* State */
 /* Module */
@@ -1237,5 +1265,111 @@ label {
     border: none; }
     .sign-up-wrap button:hover {
       background: #ea1d28; }
+
+.post-ad-wrap {
+  width: 456px;
+  margin: 0 auto 0;
+  padding-bottom: 90px; }
+  @media (max-width: 480px) {
+    .post-ad-wrap {
+      width: 100%; } }
+  .post-ad-wrap > h2 {
+    margin: 55px 0;
+    text-align: center; }
+  .post-ad-wrap > .sub-header {
+    text-align: center; }
+  .post-ad-wrap > .categories {
+    margin-top: 20px; }
+    @media (max-width: 480px) {
+      .post-ad-wrap > .categories {
+        width: 320px;
+        margin: 0 auto;
+        text-align: center; } }
+    .post-ad-wrap > .categories > .category {
+      width: 132px;
+      height: 119px;
+      float: left;
+      padding: 15px;
+      margin: 10px 10px;
+      display: inline-block;
+      border: 1px solid #000; }
+      .post-ad-wrap > .categories > .category > .svg {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto 10px;
+        text-align: center; }
+        .post-ad-wrap > .categories > .category > .svg > svg {
+          fill: #000; }
+      .post-ad-wrap > .categories > .category > .car {
+        width: 70px;
+        height: 50px;
+        margin: 10px auto 0; }
+      .post-ad-wrap > .categories > .category > .jobs {
+        margin: 0 auto 20px; }
+      .post-ad-wrap > .categories > .category > .classification {
+        margin: 5px auto 10px; }
+      .post-ad-wrap > .categories > .category .services {
+        margin: 5px auto 5px; }
+      .post-ad-wrap > .categories > .category > .text {
+        display: block;
+        text-align: center;
+        color: #000; }
+      .post-ad-wrap > .categories > .category:hover {
+        background: #ea1d28;
+        border: 1px solid #ea1d28; }
+        .post-ad-wrap > .categories > .category:hover > .svg > svg {
+          fill: #fff; }
+        .post-ad-wrap > .categories > .category:hover > .text {
+          color: #fff; }
+
+.post-ad-wrap-sub-category {
+  width: 1000px;
+  margin: 0 auto 0;
+  padding-bottom: 90px; }
+  @media (max-width: 1000px) {
+    .post-ad-wrap-sub-category {
+      width: 100%; } }
+  @media (max-width: 480px) {
+    .post-ad-wrap-sub-category {
+      width: 320px; } }
+  .post-ad-wrap-sub-category > h2 {
+    margin: 35px 0 20px;
+    text-align: center; }
+  .post-ad-wrap-sub-category > .sub-header {
+    text-align: center; }
+  .post-ad-wrap-sub-category > .sub-categories {
+    padding-top: 10px; }
+    @media (max-width: 1000px) {
+      .post-ad-wrap-sub-category > .sub-categories {
+        width: 480px;
+        margin: 0 auto; } }
+    @media (max-width: 480px) {
+      .post-ad-wrap-sub-category > .sub-categories {
+        width: 100%; } }
+    .post-ad-wrap-sub-category > .sub-categories > .category {
+      float: left;
+      width: 227px;
+      height: 50px;
+      margin: 10px 11px;
+      line-height: 50px;
+      text-align: center;
+      background: #fff;
+      border-left: 1px solid #e5e6e8;
+      border-right: 1px solid #e5e6e8;
+      border-bottom: 1px solid #c6c7c9;
+      color: #000; }
+      @media (max-width: 1000px) {
+        .post-ad-wrap-sub-category > .sub-categories > .category {
+          width: 200px;
+          margin: 10px 20px; } }
+      @media (max-width: 480px) {
+        .post-ad-wrap-sub-category > .sub-categories > .category {
+          float: none;
+          width: 100%;
+          display: block; } }
+      .post-ad-wrap-sub-category > .sub-categories > .category:hover {
+        background: #ea1d28;
+        color: #fff; }
 
 /*# sourceMappingURL=app.css.map */
