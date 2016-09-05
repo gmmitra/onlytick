@@ -160,8 +160,9 @@
   width: 645px;
   margin: 0 auto;
 
-  @include breakpoint-up(645px) {
+  @include breakpoint-up(700px) {
     width: 100%;
+    overflow-x: hidden;
   }
 
   > h2 {
@@ -265,7 +266,7 @@
     img {
       width: 100%;
 
-      @include breakpoint-up(645px) {
+      @include breakpoint-up(700px) {
         width: 100%;
       }
     }

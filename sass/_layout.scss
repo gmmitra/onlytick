@@ -40,8 +40,8 @@
 
       > .sep {
         margin: 0 3px 0 5px;
-        display: inline-block;
         vertical-align: 1px;
+        @extend %ellipsis;
       }
     }
   }

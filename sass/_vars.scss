@@ -3,7 +3,8 @@
 $red: #ea1d28;
 $gray: #8e8e8e;
 $gray-dark: #5a5a5a;
-
+$blue-light: #f3f7fa;
+$blue: #3a75b7;
 $wrap-bg: #f3f6f9;
 
 @font-face {
@@ -58,6 +59,14 @@ $wrap-bg: #f3f6f9;
   text-overflow: ellipsis;
 }
 
+%wrap-box {
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
 .no-select {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -65,4 +74,25 @@ $wrap-bg: #f3f6f9;
   -moz-user-select: none;      /* Firefox */
   -ms-user-select: none;       /* IE/Edge */
   user-select: none;           /* non-prefixed version, currently not supported by any browser */
+}
+
+.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.-font-blue {
+  color: $blue;
+}
+
+.-font-yellow {
+  color: #fdb400;
+}
+
+.-font-red {
+  color: $red;
+}
+
+.-font-gray {
+  color: $gray;
 }

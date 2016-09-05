@@ -1,0 +1,232 @@
+.product-single-wrap {
+  width: 1000px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+
+  @include breakpoint-up(1000px) {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .info {
+    margin: 28px 0 10px;
+    > p {
+      text-align: right;
+    }
+
+    > .actions {
+      text-align: right;
+
+      > a {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .contact {
+    @extend %wrap-box;
+
+    > p {
+      text-align: center;
+    }
+
+    > .mobile {
+      background: $blue-light;
+      text-align: center;
+
+      > p {
+        padding: 10px 0 10px;
+        margin: 0;
+
+        &:first-child {
+          padding-bottom: 0;
+          color: #577cb1;
+          text-transform: uppercase;
+        }
+
+        &:last-child {
+          font-size: 14px;
+
+          > i {
+            margin-right: 5px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .ads {
+    @extend %wrap-box;
+    border: none;
+
+    > .title {
+      font-size: 16px;
+      font-weight: bold;
+      color: $gray-dark;
+    }
+
+    > .item {
+      margin-bottom: 10px;
+
+      > .image {
+        float: left;
+        width: 110px;
+        margin-right: 10px;
+        background: $blue-light;
+        text-align: center;
+      }
+
+      > .name-price {
+        color: $blue;
+
+        > .price {
+          color: $red;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  header {
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .price {
+      margin-top: 35px;
+      text-align: right;
+
+      > span {
+        font-size: 28px;
+      }
+
+      > select {
+        display: inline;
+      }
+
+    }
+  }
+
+  .body {
+    @extend %wrap-box;
+    border: none;
+   -webkit-box-shadow: -1px 7px 13px -3px $gray;
+      -moz-box-shadow: -1px 7px 13px -3px $gray;
+           box-shadow: -1px 7px 13px -3px $gray;
+
+    > .gallery {
+      padding-bottom: 76px;
+    }
+
+    > .details {
+      padding: 10px;
+      margin-top: 10px;
+      background: $blue-light;
+
+      > h3 {
+        margin: 10px 0;
+        color: $gray-dark;
+        font-weight: bold;
+      }
+
+      > ul {
+        padding: 0;
+        margin: 15px 0;
+        list-style: none;
+
+        > li {
+          color: $gray;
+        }
+      }
+
+      p {
+        color: $gray;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    > .share {
+      padding: 0 10px 10px;
+
+      > h3 {
+        margin: 10px 0;
+        color: $gray-dark;
+        font-weight: bold;
+      }
+
+      > .links {
+        margin-bottom: 10px;
+
+        > .box {
+          float: left;
+          width: 48px;
+          height: 48px;
+          line-height: 48px;
+          color: #fff;
+          font-size: 24px;
+          text-align: center;
+        }
+
+        > .fb {
+          background: $blue;
+        }
+
+        > .twit {
+          background: #1da1f3;
+        }
+
+        > .mail {
+          background: #848484;
+        }
+      }
+
+    }
+
+    > .reply {
+      padding: 15px;
+      margin-bottom: 50px;
+      background: $blue;
+
+      > .title {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      > .user-info {
+        margin: 0;
+        color: #fff;
+      }
+
+      > textarea {
+        margin: 20px 0 10px;
+      }
+
+      > .agree {
+        margin-bottom: 15px;
+        color: #9fbcdc;
+      }
+
+      > .btn-send {
+        width: 100%;
+        color: #fff;
+        font-weight: bold;
+        background: none;
+        border: 2px solid #fff;
+      }
+    }
+
+    > .facebook-comment {
+      padding-bottom: 20px;
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
