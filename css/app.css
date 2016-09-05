@@ -65,7 +65,10 @@ a, a:hover, a:active, a:focus {
   .wrap-with-breadcrumbs > .breadcrumbs {
     width: 100%;
     background: #fff;
-    border-bottom: 1px solid #dedfe1; }
+    border-bottom: 1px solid #dedfe1;
+    -webkit-box-shadow: 0px 2px 1px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 1px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 1px -2px rgba(0, 0, 0, 0.75); }
     .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap {
       width: 1000px;
       height: 36px;
@@ -1371,5 +1374,107 @@ label {
       .post-ad-wrap-sub-category > .sub-categories > .category:hover {
         background: #ea1d28;
         color: #fff; }
+
+.post-ad-wrap-form {
+  width: 645px;
+  margin: 0 auto; }
+  @media (max-width: 645px) {
+    .post-ad-wrap-form {
+      width: 100%; } }
+  .post-ad-wrap-form > h2 {
+    margin: 40px 0;
+    text-align: center; }
+  .post-ad-wrap-form label {
+    color: #000; }
+  .post-ad-wrap-form input[type=file] {
+    display: none; }
+  .post-ad-wrap-form .sep {
+    height: 1px;
+    margin: 30px 0;
+    border-top: 1px dashed #ccc; }
+  .post-ad-wrap-form .dropzone {
+    width: 100%;
+    height: 290px;
+    background: #fff;
+    border: 1px solid #ccc;
+    text-align: center; }
+    .post-ad-wrap-form .dropzone > button {
+      padding: 10px 25px;
+      margin: 70px auto 30px; }
+    .post-ad-wrap-form .dropzone > p {
+      font-size: 36px;
+      color: #ccc; }
+  .post-ad-wrap-form .price > input {
+    float: left;
+    width: 50%; }
+  .post-ad-wrap-form .price > select {
+    float: right;
+    width: 50%;
+    padding: 6px 0 7px 10px;
+    background: #efefef;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    border-left: 0; }
+  .post-ad-wrap-form .btn-convert {
+    margin: 30px 0;
+    background: #e6eaed;
+    border-bottom: 1px solid #c4c8cb; }
+  .post-ad-wrap-form .final-price {
+    font-weight: bold; }
+  .post-ad-wrap-form .extra {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 20px;
+    background: #fff;
+    border: 1px solid #ccc; }
+    .post-ad-wrap-form .extra td {
+      width: 20%;
+      padding: 5px;
+      vertical-align: top; }
+  .post-ad-wrap-form .bg-white {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc; }
+  .post-ad-wrap-form .map-label {
+    margin: 20px 0 0; }
+  .post-ad-wrap-form .map {
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #ccc; }
+    .post-ad-wrap-form .map input {
+      margin-bottom: 10px; }
+    .post-ad-wrap-form .map img {
+      width: 100%; }
+      @media (max-width: 645px) {
+        .post-ad-wrap-form .map img {
+          width: 100%; } }
+  .post-ad-wrap-form .tags-label {
+    margin: 20px 0 0; }
+  .post-ad-wrap-form .tags {
+    padding: 10px;
+    margin: 0 0 10px;
+    background: #fff;
+    border: 1px solid #ccc; }
+    .post-ad-wrap-form .tags button {
+      padding: 2px 5px;
+      background: #a5a8ad;
+      border: none;
+      border-radius: 3px; }
+      .post-ad-wrap-form .tags button > i {
+        top: 1px;
+        font-size: 11px; }
+  .post-ad-wrap-form .captcha {
+    margin-top: 20px; }
+  .post-ad-wrap-form .btn-post {
+    width: 224px;
+    height: 50px;
+    margin: 30px auto 40px;
+    background: #ea1d28;
+    border: none; }
+    @media (max-width: 480px) {
+      .post-ad-wrap-form .btn-post {
+        width: 100%; } }
+    .post-ad-wrap-form .btn-post:hover {
+      background: #ea1d28; }
 
 /*# sourceMappingURL=app.css.map */

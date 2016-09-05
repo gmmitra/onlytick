@@ -924,7 +924,7 @@
           <span>POST AN AD</span>
         </div>
       </div>
-      <div class="post-ad-wrap-sub-category">
+      <div class="post-ad-wrap-form">
         <h2>Post an AD</h2>
         <form>
           <div class="form-group">
@@ -933,7 +933,7 @@
           </div>
           <div class="form-group">
             <label for="description">Description</label>
-            <textarea class="form-control" id="description"></textarea>
+            <textarea class="form-control" id="description" rows="10"></textarea>
           </div>
           <div class="row">
             <div class="col-xs-12">
@@ -941,17 +941,17 @@
             </div>
           </div>
           <div class="row form-group">
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <select class="form-control">
                 <option>20</option>
               </select>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <select class="form-control">
                 <option>August</option>
               </select>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <select class="form-control">
                 <option>2016</option>
               </select>
@@ -965,7 +965,7 @@
             <label for="galery">Photo Gallery</label>
             <input type="file" name="">
             <div class="dropzone">
-              <button class="btn">Select Files</button>
+              <button class="btn" type="button">Select Files</button>
               <p>Drop Images Here</p>
             </div>
           </div>
@@ -973,20 +973,37 @@
             <label for="phone-number">Phone Number</label>
             <input type="text" class="form-control" id="phone-number" placeholder="">
           </div>
+
           <p class="sep"></p>
-          <div class="form-group">
-            <label for="price">Price</label>
-            <input type="text" class="form-control" id="price" placeholder="Type your Country or City">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <label for="price">Price</label>
+            </div>
+          </div>
+
+          <div class="price clearfix">
+            <input type="text" class="form-control" id="price" placeholder="">
             <select>
               <option>AED - United Arab Emirates Dirham</option>
             </select>
           </div>
-          <p><button class="btn btn-lg">Convert Price to Local Currency</button></p>
-          <p>
-            <label>Final Price: </label>
-            <span></span>
-          </p>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <button class="btn btn-lg btn-block btn-convert" type="button">Convert Price to Local Currency</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <label class="final-price">Final Price: </label>
+              <span></span>
+            </div>
+          </div>
+
           <p class="sep"></p>
+
           <div class="form-group">
             <label for="size">Size</label>
             <select id="size" class="form-control">
@@ -1005,159 +1022,260 @@
               <option>Select</option>
             </select>
           </div>
+
           <div class="row">
             <div class="col-xs-12">
               <label>Ready By</label>
             </div>
           </div>
+
           <div class="row form-group">
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <select class="form-control">
                 <option>20</option>
               </select>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <select class="form-control">
                 <option>August</option>
               </select>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <select class="form-control">
                 <option>2016</option>
               </select>
             </div>
           </div>
-          <div>
-            <label for="bathrooms">Extra Features(Optional)</label>
-            <div class="extra">
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Balcony
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Built in Kitchen
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Buuilt in Wardrobes
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Central A/C &amp; Heating
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Concierge Service
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Covered Parking
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Maid Service
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Maid's Room
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Private Gym
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Private Jacuzzi
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Private Graden
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Private Pool
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Pet's Allowed
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Security
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Shared Gym
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Shared Pool
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Shared Spa
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> View of Landmark
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> View of Water
-                <span class="image"></span>
-              </label>
-              <label class="checkbox-inline">
-                <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Walk-in Closet
-                <span class="image"></span>
-              </label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row">
-              <div class="col-xs-6">
-                <label for="">Furnished?</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <label class="checkbox-inline">
-                  <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Yes
-                  <span class="image"></span>
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> No
-                  <span class="image"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="row">
-              <div class="col-xs-6">
-                <label for="">Landlord / Agent?</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-6">
-                <label class="checkbox-inline">
-                  <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Landlord
-                  <span class="image"></span>
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" name="inlineCheckboxOptions" id="inlineCheckbox2" value="option2"> Agent
-                  <span class="image"></span>
-                </label>
-              </div>
-            </div>
-          </div>
+
           <div class="row">
             <div class="col-xs-12">
-              <label for="">Location</label>
+              <label for="bathrooms">Extra Features(Optional)</label>
             </div>
           </div>
-          <div class="row">
 
+          <div class="extra">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Balcony
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Built in Kitchen
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Built in Wardrobes
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Central A/C &amp; Heating
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Concierge Service
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Covered Parking
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Maid Service
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Maid's Room
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Private Gym
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Private Jacuzzi
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Private Graden
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Private Pool
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Pet's Allowed
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Security
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Shared Gym
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Shared Pool
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Shared Spa
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> View of Landmark
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> View of Water
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                  <td>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" name="inlineCheckboxOptions" id="" value="option2"> Walk-in Closet
+                      <span class="image"></span>
+                    </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <label for="">Furnished?</label>
+            </div>
+            <div class="col-xs-6">
+              <label for="">Landlord / Agent?</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="bg-white clearfix">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <label class="radio-inline pull-left">
+                      <input type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option2"> Yes
+                      <span class="image"></span>
+                    </label>
+                  </div>
+                  <div class="col-xs-3">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions1" id="inlineRadio4" value="option2"> No
+                      <span class="image"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="bg-white clearfix">
+                <div class="row">
+                  <div class="col-xs-4">
+                    <label class="radio-inline pull-left">
+                      <input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option2"> Landlord
+                      <span class="image"></span>
+                    </label>
+                  </div>
+                  <div class="col-xs-3">
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2"> Agent
+                      <span class="image"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-label">
+            <label for="">Location</label>
+          </div>
+
+          <div class="map">
+            <div class="row">
+              <div class="col-xs-12">
+                <input type="text" class="form-control" id="" placeholder="Location">
+              </div>
+              <div class="col-xs-12">
+                <img src="img/map.jpg">
+              </div>
+            </div>
+          </div>
+
+          <div class="tags-label">
+            <label for="">Tags</label>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="tags">
+                <button class="btn btn-primary" type="button">
+                  Tag 1 <i class="glyphicon glyphicon-remove"></i>
+                </button>
+                <button class="btn btn-primary" type="button">
+                  Tag 2 <i class="glyphicon glyphicon-remove"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <p class="captcha"><img src="img/captcha.jpg"></p>
+          <p><button type="button" class="btn btn-primary btn-post" type="button">Post my AD</button></p>
         </form>
       </div>
     </div>
