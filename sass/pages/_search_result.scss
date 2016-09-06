@@ -1,0 +1,405 @@
+.search-result-wrap {
+
+  > .search-result-info {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #dedfe1;
+    border-top: 1px solid #dedfe1;
+    -webkit-box-shadow: 0px 2px 1px -2px rgba(0, 0, 0, 0.75);
+       -moz-box-shadow: 0px 2px 1px -2px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 2px 1px -2px rgba(0, 0, 0, 0.75);
+
+    > .search-result-info-wrap {
+      width: 1000px;
+      height: 36px;
+      margin: 0 auto;
+
+      @include breakpoint-up(1000px) {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+      }
+
+      > .text {
+        float: left;
+        margin: 0;
+        line-height: 36px;
+        color: $gray;
+        @extend %ellipsis;
+
+        @include breakpoint-up(798px) {
+          float: none;
+        }
+      }
+
+      > .sort {
+        float: right;
+        line-height: 36px;
+        color: $gray;
+
+        @include breakpoint-up(798px) {
+          float: none;
+        }
+
+        > label {
+          margin-bottom: 0;
+        }
+
+        > a {
+          display: inline-block;
+          margin-left: 5px;
+          vertical-align: -3px;
+          font-size: 20px;
+          color: $gray-dark;
+
+          &.active {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+
+  > .search-result {
+    width: 1000px;
+    margin: 13px auto 0;
+    padding-bottom: 30px;
+
+    @include breakpoint-up(1000px) {
+      width: 100%;
+    }
+
+    .browse-result {
+      padding: 15px;
+      margin-bottom: 10px;
+      background: #e3e6eb;
+
+      > .title {
+        font-size: 16px;
+        color: $gray;
+      }
+
+      > ul {
+        padding: 0;
+        margin: 0 0 5px;
+        list-style: none;
+
+        > li {
+
+          > a {
+            display: inline-block;
+            padding: 3px 0;
+            font-size: 14px;
+            color: $gray-dark;
+
+            &:hover {
+              color: $red;
+            }
+          }
+        }
+      }
+
+      > .expand {
+        color: $gray;
+      }
+    }
+
+    .refine {
+      padding: 15px 0;
+      margin-bottom: 10px;
+      background: #e3e6eb;
+
+      > .title {
+        padding: 0 15px;
+        font-size: 16px;
+        color: $gray;
+      }
+
+      > dl {
+        margin: 0 0 5px;
+
+        > dt {
+          padding: 0 15px;
+          margin: 5px 0;
+          background: #d3d6db;
+          color: #000;
+        }
+
+        > dd {
+          padding: 0 15px;
+
+          > a {
+            display: inline-block;
+            padding: 3px 0;
+            font-size: 14px;
+            color: $gray-dark;
+
+            &:hover {
+              color: $red;
+            }
+          }
+
+          > input {
+            width: 50px;
+            height: 24px;
+            margin: 0 3px;
+          }
+
+          > button {
+            padding: 3px 8px;
+            background: #c5c6ca;
+            border: none;
+            border-radius: 3px;
+          }
+        }
+      }
+
+      > .expand {
+        padding: 0 15px;
+        color: $gray;
+      }
+
+    }
+
+    .advance-options {
+      padding: 15px;
+      background: #e3e6eb;
+
+      > .title {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: $gray;
+      }
+
+      label {
+        color: $gray-dark;
+      }
+
+      > .additional {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .btn-search {
+        margin-top: 20px;
+        background: $red;
+        color: #fff;
+      }
+    }
+
+    .search-item {
+      position: relative;
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e4e8eb;
+      background: #fff;
+
+      &.grid {
+        width: 227px;
+        float: left;
+        margin: 0 6px 10px;
+        padding: 0 10px 10px;
+
+        > figure {
+          float: none;
+          width: 100%;
+          text-align: center;
+        }
+
+        > .info {
+          float: right;
+          width: 100%;
+
+          > .other {
+            width: 100%;
+            margin: 0;
+
+            > .owner {
+              float: none;
+
+              > p {
+                margin: 0;
+                color: $gray;
+              }
+            }
+
+            > .usage {
+              float: none;
+            }
+          }
+
+          > .actions {
+            margin: 10px 0 0;
+
+            > a {
+              margin: 0;
+              border: none;
+            }
+
+            .text {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &.featured {
+        border-top: 2px solid #b7db39;
+
+        > .label {
+          position: absolute;
+          top: 0;
+          left: 10px;
+          padding: 3px 10px;
+          background: #b7db39;
+          color: #ff;
+          border-radius: 0;
+          font-size: 12px;
+        }
+      }
+
+      > figure {
+        float: left;
+        width: 280px;
+        text-align: center;
+      }
+
+      > .info {
+        float: left;
+        width: 440px;
+
+        > .product-name {
+          margin-bottom: 15px;
+          line-height: 26px;
+          font-size: 22px;
+          color: $blue;
+        }
+
+        > .price {
+          color: $red;
+          font-weight: bold;
+
+          > select {
+            border: none;
+          }
+        }
+
+        > .other {
+          width: 70%;
+          margin: 10px 0;
+
+          > .owner {
+            float: left;
+
+            > p {
+              margin: 2px 0;
+              color: $gray;
+            }
+          }
+
+          > .usage {
+            float: right;
+
+            > p {
+              margin: 2px 0;
+              color: $gray;
+            }
+
+          }
+        }
+
+        > p {
+          margin: 2px 0;
+          color: $gray;
+        }
+
+        > .actions {
+          margin-top: 20px;
+
+          > a {
+            padding: 3px;
+            margin-right: 10px;
+            border: 1px solid #d8d9db;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .paging {
+      height: 40px;
+      padding: 10px;
+      background: #e3e6eb;
+      color: $gray;
+
+      @include breakpoint-up(798px) {
+        width: 100%;
+        height: auto;
+      }
+
+      > .jump {
+        float: left;
+
+        @include breakpoint-up(600px) {
+          float: none;
+          text-align: center;
+        }
+      }
+
+      a {
+        padding: 0 3px;
+
+        &:hover {
+          color: $red;
+        }
+
+        span {
+          color: $gray;
+        }
+      }
+
+      > .page {
+        display: inline-block;
+        margin-left: 20%;
+
+        @include breakpoint-up(600px) {
+          display: block;
+          text-align: center;
+          margin: 10px 0;
+        }
+      }
+
+      > .go-to-page {
+        float: right;
+        margin-top: -2px;
+
+        @include breakpoint-up(600px) {
+          float: none;
+          text-align: center;
+        }
+
+        input {
+          width: 50px;
+        }
+
+        label {
+          margin: 0;
+        }
+
+        button {
+          padding: 3px 5px;
+          background: #c5c6ca;
+          border: none;
+          border-radius: 3px;
+        }
+
+      }
+    }
+  }
+}

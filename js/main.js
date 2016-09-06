@@ -13,4 +13,18 @@ $(document).ready(function() {
     });
     $(target).slideToggle(300);
   });
+
+  $('.change-result-view').on('click', function() {
+    var _this = $(this),
+        type = _this.data('type');
+
+    $('.change-result-view').removeClass('active');
+    _this.addClass('active');
+
+    if(type === 'grid') {
+      $('.search-item').addClass('grid');
+    } else {
+      $('.search-item').removeClass('grid');
+    }
+  })
 });
