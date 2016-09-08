@@ -185,7 +185,7 @@
             padding: 10px;
           }
 
-          > a {
+          > .location, > .lang {
             position: relative;
             display: inline-block;
             font-size: 14px;
@@ -218,8 +218,12 @@
                   padding: 3px 0;
                   font-size: 13px;
 
-                  &:hover {
-                    text-decoration: underline;
+                  > a {
+                    color: $gray;
+
+                    &:hover {
+                      text-decoration: underline;
+                    }
                   }
                 }
               }
