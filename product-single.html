@@ -946,53 +946,28 @@
               </header>
               <div class="body">
                 <div class="gallery">
-                  <ul class="slickslide">
-                    <li>
+                  <div id="carousel">
+                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg"  title="img" alt="img" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img2" alt="img2" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
-                    </li>
-                     <li>
+                    </div>
+                     <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg"  title="img2" alt="img2" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
-                    </li>
-                    <li>
+                    </div>
+                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
-                    </li>
-                  </ul>
-                  <div class="slick-thumbs">
-                    <ul>
-                       <li>
-                        <img src="img/sample-carousel-item.jpg" />
-                      </li>
-                      <li>
-                        <img src="img/sample-carousel-item.jpg" />
-                      </li>
-                      <li>
-                        <img src="img/sample-carousel-item.jpg" />
-                      </li>
-                      <li>
-                        <img src="img/sample-carousel-item.jpg" />
-                      </li>
-                      <li>
-                        <img src="img/sample-carousel-item.jpg" />
-                      </li>
-                      <li>
-                        <img src="img/sample-carousel-item.jpg" />
-                      </li>
-                      <li>
-                        <img src="img/sample-carousel-item.jpg" />
-                      </li>
-                    </ul>
+                    </div>
                   </div>
                 </div>
 
@@ -1059,28 +1034,28 @@
                 <div class="item clearfix">
                   <div class="image"><img src="img/sample-jacket.jpg"></div>
                   <div class="name-price">
-                    <p class="name">Tanming Women's Faux Leather Collar Moto Biker Short Coat Jacket</p>
+                    <p class="name"><a href="#">Tanming Women's Faux Leather Collar Moto Biker Short Coat Jacket</a></p>
                     <p class="price">$300</p>
                   </div>
                 </div>
                 <div class="item clearfix">
                   <div class="image"><img src="img/sample-jacket.jpg"></div>
                   <div class="name-price">
-                    <p class="name">Tanming Women's Faux Leather Collar Moto Biker Short Coat Jacket</p>
+                    <p class="name"><a href="#">Tanming Women's Faux Leather Collar Moto Biker Short Coat Jacket</a></p>
                     <p class="price">$300</p>
                   </div>
                 </div>
                 <div class="item clearfix">
                   <div class="image"><img src="img/sample-jacket.jpg"></div>
                   <div class="name-price">
-                    <p class="name">Tanming Women's Faux Leather Collar Moto Biker Short Coat Jacket</p>
+                    <p class="name"><a href="#">Tanming Women's Faux Leather Collar Moto Biker Short Coat Jacket</a></p>
                     <p class="price">$300</p>
                   </div>
                 </div>
                 <div class="item clearfix">
                   <div class="image"><img src="img/sample-jacket.jpg"></div>
                   <div class="name-price">
-                    <p class="name">Tanming Women's Faux Leather Collar Moto Biker Short Coat Jacket</p>
+                    <p class="name"><a href="#">Tanming Women's Faux Leather Collar Moto Biker Short Coat Jacket</a></p>
                     <p class="price">$300</p>
                   </div>
                 </div>
@@ -1180,12 +1155,11 @@
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-    $('.slickslide').slick({
+    $('#carousel').slick({
       dots: true,
       infinite: true,
       speed: 500,
       fade: false,
-      slide: 'li',
       cssEase: 'linear',
       centerMode: true,
       slidesToShow: 1,
@@ -1213,7 +1187,9 @@
         }
       }],
       customPaging: function (slider, i) {
-          return '<button class="tab">' + $('.slick-thumbs li:nth-child(' + (i + 1) + ')').html() + '</button>';
+           var thumb = $(slider.$slides[i]).data('thumb');
+           console.log(slider);
+          return '<a><img src="'+thumb+'"></a>';
       }
     });
   </script>
