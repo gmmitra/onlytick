@@ -233,13 +233,13 @@ a, a:hover, a:active, a:focus {
       .main-header-wrap > .main-header > .top > .right > .location-lang-wrap {
         float: left;
         width: 40%;
-        margin: 23px 0 0 20px; }
+        margin: 23px 0 0 20px;
+        position: relative; }
         @media (max-width: 480px) {
           .main-header-wrap > .main-header > .top > .right > .location-lang-wrap {
             margin: 0;
             padding: 10px; } }
         .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .location, .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang {
-          position: relative;
           display: inline-block;
           font-size: 14px;
           color: #8e8e8e;
@@ -250,12 +250,15 @@ a, a:hover, a:active, a:focus {
             vertical-align: -2px; }
           .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .location > .sub-menu, .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang > .sub-menu {
             position: absolute;
-            width: 100px;
+            max-width: 130px;
+            padding-right: 15px;
             display: none;
             background: #fff;
             border-bottom: 1px solid #d1d1d1;
             border-left: 1px solid #d1d1d1;
-            border-right: 1px solid #d1d1d1; }
+            border-right: 1px solid #d1d1d1;
+            overflow-y: scroll;
+            max-height: 300px; }
             .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .location > .sub-menu > ul, .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang > .sub-menu > ul {
               list-style: none;
               padding: 3px 0 0 17px; }
@@ -270,8 +273,9 @@ a, a:hover, a:active, a:focus {
           .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .location:hover > .sub-menu, .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang:hover > .sub-menu {
             display: block; }
         .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang > .sub-menu {
-          left: -10px;
-          width: 70px; }
+          width: 53px;
+          right: 0;
+          padding-right: 0; }
           .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang > .sub-menu > ul {
             padding: 3px 0 0 12px; }
         .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .sep {
@@ -1895,5 +1899,3 @@ label {
         background: #c5c6ca;
         border: none;
         border-radius: 3px; }
-
-/*# sourceMappingURL=app.css.map */
