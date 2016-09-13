@@ -1,42 +1,41 @@
 .messages {
   float: right;
-position:relative;
-.fa.fa-envelope-o {
-  font-size: 16px !important;
-}
-.fa.fa-exclamation-circle {
-  font-size: 12px;
-  position:absolute;
-  right: -2px;
-  top: -3px;
-  color: #ea1d28;
+  position:relative;
 
-}
+  .fa.fa-envelope-o {
+    font-size: 16px !important;
+  }
 
-&:hover .fa.fa-exclamation-circle {
+  .fa.fa-exclamation-circle {
+    font-size: 12px;
+    position: absolute;
+    right: -2px;
+    top: -3px;
+    color: #ea1d28;
+  }
 
-          color: mix(black,#ea1d28,15%);
-        
-}
+  &:hover .fa.fa-exclamation-circle {
+    color: mix(black,#ea1d28,15%);
+  }
 
 }
 
 .avatar-wrap {
   position:relative;
-    width: 40px;
-height: 30px;
+  width: 40px;
+  height: 30px;
   padding-left:10px;
-display:inline-block;
-float: right;
-margin-top: -6px;
-margin-left: 16px;
+  display:inline-block;
+  float: right;
+  margin-top: -6px;
+  margin-left: 16px;
 
 > a {
   display:inline-block;
   -webkit-border-radius: 1000px;
--moz-border-radius: 1000px;
-border-radius: 1000px;
-overflow:hidden;
+  -moz-border-radius: 1000px;
+  border-radius: 1000px;
+  overflow:hidden;
 }
 
 .user-settings-sub {
@@ -45,9 +44,9 @@ overflow:hidden;
   right: 0;
   top:30px;
   background: #fff;
-border: 1px solid #d1d1d1;
-border-top:none;
-min-width: 120px;
+  border: 1px solid #d1d1d1;
+  border-top:none;
+  min-width: 120px;
   a {
     float: none;
     display: block;
@@ -60,8 +59,9 @@ min-width: 120px;
   img {
     width: 100%;
   }
+
   &:hover .user-settings-sub {
-  display: block;
-}
+    display: block;
+  }
 }
 
