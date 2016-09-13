@@ -36,5 +36,4 @@ gulp.task('browser-sync', ['sass:watch'], function() {
   browserSync.watch('*.html').on('change', browserSync.reload);
 });
 
-
 gulp.task('default', ['browser-sync']);
