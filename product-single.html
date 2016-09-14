@@ -947,28 +947,41 @@
               <div class="body">
                 <div class="gallery">
                   <div id="carousel">
-                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg"  title="img" alt="img" />
                     </div>
-                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img2" alt="img2" />
                     </div>
-                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
                     </div>
-                     <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
+                     <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg"  title="img2" alt="img2" />
                     </div>
-                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
                     </div>
-                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
                     </div>
-                    <div class="slick-item" data-thumb="img/sample-carousel-item.jpg">
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
+                      <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
+                    </div>
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
+                      <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
+                    </div>
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
+                      <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
+                    </div>
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
+                      <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
+                    </div>
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
                     </div>
                   </div>
+                  <div class="slide-dots-wrap clearfix"></div>
                 </div>
 
                 <div class="details">
@@ -1148,6 +1161,18 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="carouselModal" tabindex="-1" role="dialog" aria-labelledby="carouselModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="carouselModalLabel">Image Title</h4>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
     <!-- Modal -->
   </main>
   <script src="js/jquery-1.12.0.min.js"></script>
@@ -1157,7 +1182,8 @@
   <script>
     $('#carousel').slick({
       dots: true,
-      infinite: true,
+      appendDots: $('.slide-dots-wrap'),
+      infinite: false,
       speed: 500,
       fade: false,
       cssEase: 'linear',
@@ -1183,15 +1209,32 @@
           variableWidth: false,
           slidesToShow: 1,
           dots: true
-
         }
       }],
       customPaging: function (slider, i) {
-           var thumb = $(slider.$slides[i]).data('thumb');
-           console.log(slider);
-          return '<a><img src="'+thumb+'"></a>';
+        var thumb = $(slider.$slides[i]).data('thumb');
+        var className = '';
+        if($(slider.$slides[i]).data('move')) {
+          className = 'move';
+        }
+        return '<a href="javascript:void(0)" class="' + className + '"><img src="' + thumb + '"></a>';
       }
     });
+
+    $('#carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+      if(nextSlide >= 7) {
+        if(currentSlide < nextSlide) {
+          $('.slide-dots-wrap ul').css('margin-left', '-=86px');
+        }
+      } else {
+        $('.slide-dots-wrap ul').css('margin-left', '0px');
+      }
+    });
+
+    $('.slick-item').on('click', function() {
+      $('#carouselModal').find('.modal-body').html('<img src="' + $(this).find('img').attr('src') + '" width="100%">');
+      $('#carouselModal').find('.modal-title').html($(this).data('title'));
+    })
   </script>
 </body>
 </html>

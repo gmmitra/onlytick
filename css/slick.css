@@ -191,15 +191,36 @@ ul.slickslide li img, .slick-dots button img {
     width:100%;
     height:auto;
 }
+
+@media (max-width: 680px) {
+  .gallery {
+    padding-bottom: 0 !important;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+}
+
+.slide-dots-wrap {
+  width: 615px;
+  height: 64px;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  display: block;
+  overflow: hidden;
+}
+
 .slick-dots {
-    bottom: -76px;
-    top:auto;
-    left: 0;
-    right:auto;
-    position:absolute;
-    line-height:0;
-    background:#f3f6f9;
-    padding: 0;
+  width: 100%;
+  background: #f3f6f9;
+  padding: 0;
+  white-space: nowrap;
+  margin: 0;
+  -webkit-transition: all 500ms ease-out 1ms;
+  -moz-transition: all 500ms ease-out 1ms;
+  -o-transition: all 500ms ease-out 1ms;
+  transition: all 500ms ease-out 1ms;
 }
 
 .slick-dots li, .slick-dots li button:before {
