@@ -2071,4 +2071,73 @@ label {
         border: none;
         border-radius: 3px; }
 
+.country-selection-wrap {
+  width: 697px;
+  margin: 0 auto;
+  padding-bottom: 50px; }
+  @media (max-width: 720px) {
+    .country-selection-wrap {
+      width: 100%; } }
+  .country-selection-wrap > h2 {
+    margin: 55px 0;
+    text-align: center; }
+  .country-selection-wrap > .selection {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; }
+    .country-selection-wrap > .selection:hover > .search-result {
+      display: block; }
+    .country-selection-wrap > .selection > header {
+      cursor: pointer; }
+      .country-selection-wrap > .selection > header > p {
+        margin: 0;
+        float: left; }
+      .country-selection-wrap > .selection > header > i {
+        float: right; }
+    .country-selection-wrap > .selection > .search-result {
+      position: absolute;
+      top: 30px;
+      left: -1px;
+      width: 697px;
+      display: none;
+      padding: 10px;
+      margin-top: 10px;
+      background: #fff;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc; }
+      @media (max-width: 720px) {
+        .country-selection-wrap > .selection > .search-result {
+          width: 100%; } }
+      .country-selection-wrap > .selection > .search-result > .search {
+        padding: 3px;
+        border: 1px solid #ccc; }
+        .country-selection-wrap > .selection > .search-result > .search > input {
+          width: 95%;
+          border: none;
+          outline: 0; }
+          @media (max-width: 720px) {
+            .country-selection-wrap > .selection > .search-result > .search > input {
+              width: 90%; } }
+        .country-selection-wrap > .selection > .search-result > .search > span {
+          display: inline-block;
+          margin: 3px; }
+      .country-selection-wrap > .selection > .search-result > .result {
+        height: 200px;
+        overflow-y: scroll;
+        margin-top: 10px; }
+        .country-selection-wrap > .selection > .search-result > .result > ul {
+          padding: 0;
+          list-style: none; }
+          .country-selection-wrap > .selection > .search-result > .result > ul > li {
+            border-bottom: 1px solid #ccc; }
+            .country-selection-wrap > .selection > .search-result > .result > ul > li > a {
+              width: 100%;
+              padding: 7px 5px;
+              display: inline-block;
+              color: #5a5a5a; }
+  .country-selection-wrap > .map > img {
+    width: 100%; }
+
 /*# sourceMappingURL=app.css.map */
