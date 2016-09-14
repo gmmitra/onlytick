@@ -248,8 +248,8 @@
              // left: -10px;
              // width: 70px;
               width: 53px;
-right: 0;
-padding-right:0;
+              right: 0;
+              padding-right:0;
 
               > ul {
                 padding: 3px 0 0 12px;
@@ -789,6 +789,37 @@ padding-right:0;
             }
           }
 
+          > .avatar-wrap {
+            text-align: center;
+
+            > a {
+              display: inline-block;
+
+              > img {
+                width: 50px;
+                border-radius: 100px;
+              }
+            }
+
+            > .user-settings-sub {
+              display: none;
+              margin-top: 10px;
+
+              > a {
+                padding: 3px;
+                display: block;
+                color: #000;
+              }
+            }
+
+            &:hover {
+
+              > .user-settings-sub {
+                display: block;
+              }
+            }
+          }
+
           &:hover {
 
             > a {
@@ -797,6 +828,35 @@ padding-right:0;
 
               > svg {
                 fill: #000;
+              }
+            }
+          }
+        }
+
+        > .messages {
+
+          > a {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+
+            > .fa.fa-envelope-o {
+              z-index: 3;
+            }
+
+            > .fa.fa-exclamation-circle {
+              font-size: 12px;
+              position: absolute;
+              left: 18px;
+              top: 10px;
+              color: #ea1d28;
+              z-index: 5;
+            }
+
+            &:hover {
+
+              .fa.fa-exclamation-circle {
+                color: #fff;
               }
             }
           }
@@ -899,6 +959,10 @@ padding-right:0;
                  -moz-columns: 150px 2;
                       columns: 150px 2;
               border: 0;
+
+              a {
+                color: #000;
+              }
             }
           }
         }
