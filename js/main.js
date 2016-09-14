@@ -27,4 +27,14 @@ $(document).ready(function() {
       $('.search-item').removeClass('grid');
     }
   })
+
+  $('.box > header').on('click', function() {
+    var _this = $(this);
+    _this.parent().toggleClass('minimize');
+  });
+
+  $('.close-box').on('click', function() {
+    var _this = $(this);
+    _this.parents('.box').remove();
+  });
 });

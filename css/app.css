@@ -9,7 +9,7 @@
 
 /* Mixins*/
 /* Reusable Classes */
-.wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap, .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap > .sep, .trending-ads > .trending-ads-wrap > .content > .item > .title, .search-result-wrap > .search-result-info > .search-result-info-wrap > .text {
+.wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap, .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap > .sep, .trending-ads > .trending-ads-wrap > .content > .item > .title, .chat > .box > header > p, .search-result-wrap > .search-result-info > .search-result-info-wrap > .text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -1257,6 +1257,90 @@ label {
     width: 100%; }
   .main-header-wrap .login-signup > .avatar-wrap:hover .user-settings-sub {
     display: block; }
+
+.chat {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+  text-align: right; }
+  .chat > .box {
+    width: 250px;
+    height: 370px;
+    float: right;
+    margin: 0 5px;
+    background: #fff;
+    border: 1px solid #dfe3e5;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: hidden; }
+    .chat > .box.minimize {
+      height: 35px;
+      margin-top: 335px; }
+    .chat > .box > header {
+      height: 30px;
+      padding: 0 10px;
+      margin: 1px;
+      background: #ea1d28;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      .chat > .box > header:hover {
+        cursor: pointer; }
+      .chat > .box > header > p {
+        float: left;
+        width: 200px;
+        margin: 0;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+        font-size: 13px; }
+      .chat > .box > header > a {
+        float: right;
+        line-height: 30px;
+        color: #fff; }
+    .chat > .box > .body {
+      width: 100%;
+      height: 350px;
+      padding: 1px;
+      margin-left: 1px;
+      overflow-y: scroll;
+      background: #fff; }
+      .chat > .box > .body > .message {
+        padding: 5px;
+        margin-bottom: 1px;
+        background: #e0e3e5; }
+        .chat > .box > .body > .message > .avatar {
+          float: left;
+          margin: 0 8px; }
+          .chat > .box > .body > .message > .avatar > img {
+            width: 40px;
+            border-radius: 100px; }
+        .chat > .box > .body > .message > .text {
+          position: relative;
+          float: left;
+          width: 160px; }
+          .chat > .box > .body > .message > .text > p {
+            margin: 0;
+            text-align: left;
+            color: #777777;
+            font-size: 13px; }
+          .chat > .box > .body > .message > .text > .user {
+            font-weight: bold;
+            color: #000;
+            font-size: 13px; }
+          .chat > .box > .body > .message > .text > span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 2px;
+            background: #999999;
+            text-align: center;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 11px; }
 
 /* Pages */
 .modal-body > .login-social {
