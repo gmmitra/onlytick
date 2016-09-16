@@ -9,7 +9,7 @@
 
 /* Mixins*/
 /* Reusable Classes */
-.wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap, .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap > .sep, .trending-ads > .trending-ads-wrap > .content > .item > .title, .chat > .box > header > p, .search-result-wrap > .search-result-info > .search-result-info-wrap > .text {
+.wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap, .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap > .sep, .trending-ads > .trending-ads-wrap > .content > .item > .title, .trending-ads > .trending-ads-wrap > .content > .item > .location-time > .location, .chat > .box > header > p, .search-result-wrap > .search-result-info > .search-result-info-wrap > .text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -1097,6 +1097,7 @@ a, a:hover, a:active, a:focus {
           z-index: 2; }
           .trending-ads > .trending-ads-wrap > .content > .item > .location-time > .location {
             float: left;
+            width: 70%;
             color: #fff; }
             .trending-ads > .trending-ads-wrap > .content > .item > .location-time > .location > img {
               margin-right: 5px; }

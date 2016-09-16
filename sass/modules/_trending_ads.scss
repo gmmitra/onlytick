@@ -61,7 +61,10 @@
 
           > .location {
             float: left;
+            width: 70%;
             color: #fff;
+
+            @extend %ellipsis;
 
             > img {
               margin-right: 5px;
