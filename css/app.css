@@ -1071,8 +1071,9 @@ a, a:hover, a:active, a:focus {
         float: left;
         width: 250px;
         height: 198px;
-        display: block; }
-        @media (max-width: 480px) {
+        display: block;
+        background: #fff; }
+        @media (max-width: 555px) {
           .trending-ads > .trending-ads-wrap > .content > .item {
             float: none;
             margin: 10px auto; } }
@@ -1105,16 +1106,19 @@ a, a:hover, a:active, a:focus {
             float: right;
             color: #fff; }
         .trending-ads > .trending-ads-wrap > .content > .item:hover > .overlay {
-          display: block; }
+          display: block;
+          background: rgba(255, 0, 0, 0.5); }
         .trending-ads > .trending-ads-wrap > .content > .item > .overlay {
           position: absolute;
           top: 0;
           left: 0;
           width: 250px;
           height: 198px;
-          display: none;
           z-index: 2;
-          background: rgba(255, 0, 0, 0.5); }
+          background: -webkit-linear-gradient(to bottom, transparent, black);
+          background: -moz-linear-gradient(to bottom, transparent, black);
+          background: -o-linear-gradient(to bottom, transparent, black);
+          background: linear-gradient(to bottom, transparent, black); }
 
 .popuplar-categories {
   width: 1000px;
@@ -1267,6 +1271,9 @@ label {
   padding: 0;
   margin: 0;
   text-align: right; }
+  @media (max-width: 680px) {
+    .chat {
+      display: none; } }
   .chat > .box {
     width: 250px;
     height: 370px;
