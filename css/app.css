@@ -1115,10 +1115,10 @@ a, a:hover, a:active, a:focus {
           width: 250px;
           height: 198px;
           z-index: 2;
-          background: -webkit-linear-gradient(to bottom, transparent, black);
-          background: -moz-linear-gradient(to bottom, transparent, black);
-          background: -o-linear-gradient(to bottom, transparent, black);
-          background: linear-gradient(to bottom, transparent, black); }
+          background: -webkit-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
+          background: -moz-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
+          background: -o-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
+          background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2)); }
 
 .popuplar-categories {
   width: 1000px;
