@@ -1,0 +1,46 @@
+.modal-body.country {
+	max-height:300px;
+	overflow-y:auto;
+	ul {
+		list-style: none;
+		padding:0;
+	}
+	li {
+		padding:0 ;
+		&:first-child a {
+border-top:none;
+		}
+	}
+	a {
+		display: block;
+		padding: 10px 0;
+border-top:1px solid #eee;
+text-indent:10px;
+
+&:hover {
+	background:$red;
+	color:#fff;
+}
+	}
+}
+
+#mapModal {
+	.modal-header {
+		background:$red;
+	}
+	.modal-dialog {
+		max-width: 250px;
+	}
+}
+
+.country-selection-wrap > .selection > .search-result > .result > ul > li {
+	padding:5px;
+}
+
+.country-selection-wrap > .selection > .search-result > .result > ul > li:hover {
+	background:$red;
+	
+	a {
+		color: #fff;
+	}
+}
