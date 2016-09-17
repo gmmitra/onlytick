@@ -37,4 +37,11 @@ $(document).ready(function() {
     var _this = $(this);
     _this.parents('.box').remove();
   });
+
+
+  $('.messages').on('click', function() {
+  $('.chat').show();
+  });
+
+
 });

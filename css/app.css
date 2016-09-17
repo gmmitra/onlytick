@@ -1264,6 +1264,7 @@ label {
     display: block; }
 
 .chat {
+  display: none;
   position: fixed;
   bottom: 0;
   right: 0;
