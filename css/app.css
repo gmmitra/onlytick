@@ -1350,6 +1350,39 @@ label {
             color: #fff;
             font-size: 11px; }
 
+.modal-body.country {
+  max-height: 300px;
+  overflow-y: auto; }
+  .modal-body.country ul {
+    list-style: none;
+    padding: 0; }
+  .modal-body.country li {
+    padding: 0; }
+    .modal-body.country li:first-child a {
+      border-top: none; }
+  .modal-body.country a {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    text-indent: 10px; }
+    .modal-body.country a:hover {
+      background: #ea1d28;
+      color: #fff; }
+
+#mapModal .modal-header {
+  background: #ea1d28; }
+
+#mapModal .modal-dialog {
+  max-width: 250px; }
+
+.country-selection-wrap > .selection > .search-result > .result > ul > li {
+  padding: 5px; }
+
+.country-selection-wrap > .selection > .search-result > .result > ul > li:hover {
+  background: #ea1d28; }
+  .country-selection-wrap > .selection > .search-result > .result > ul > li:hover a {
+    color: #fff; }
+
 /* Pages */
 .modal-body > .login-social {
   margin-bottom: 10px; }
