@@ -213,6 +213,7 @@
               border-right: 1px solid #d1d1d1;
               overflow-y: scroll;
               max-height: 300px;
+              z-index: 999;
 
               > ul {
                 list-style: none;

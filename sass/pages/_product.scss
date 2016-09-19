@@ -96,15 +96,24 @@
     }
 
     .price {
-      margin-top: 35px;
+      
+margin-top: 0px;
+      text-align: left;
+      margin-bottom: 20px;
+
+      @media (min-width: 992px) {
+    margin-top: 50px;
       text-align: right;
+  }
 
       > span {
-        font-size: 28px;
+        font-size: 18px;
       }
 
       > select {
         display: inline;
+        background: transparent;
+border: none;
       }
 
     }
@@ -230,4 +239,13 @@
       }
     }
   }
+}
+
+ul.nav.nav-tabs {
+  margin-bottom: 0 !important;
+}
+
+.tab-content {
+  padding: 3px;
+  background:#fff;
 }
