@@ -2057,6 +2057,11 @@ label {
     margin-bottom: 10px;
     border-bottom: 1px solid #e4e8eb;
     background: #fff; }
+    .search-result-wrap > .search-result .search-item .product-name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%; }
     .search-result-wrap > .search-result .search-item.grid {
       width: 227px;
       float: left;
@@ -2065,10 +2070,19 @@ label {
       .search-result-wrap > .search-result .search-item.grid > figure {
         float: none;
         width: 100%;
-        text-align: center; }
+        text-align: center;
+        margin: 15px 0;
+        height: 150px; }
+        .search-result-wrap > .search-result .search-item.grid > figure img {
+          width: auto; }
       .search-result-wrap > .search-result .search-item.grid > .info {
         float: right;
         width: 100%; }
+        .search-result-wrap > .search-result .search-item.grid > .info p {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%; }
         .search-result-wrap > .search-result .search-item.grid > .info > .other {
           width: 100%;
           margin: 0; }
@@ -2099,8 +2113,14 @@ label {
         font-size: 12px; }
     .search-result-wrap > .search-result .search-item > figure {
       float: left;
-      width: 280px;
-      text-align: center; }
+      width: 250px;
+      text-align: center;
+      overflow: hidden;
+      margin: 0 15px 0 10px;
+      max-height: 280px; }
+      .search-result-wrap > .search-result .search-item > figure img {
+        width: 100%;
+        max-width: 100%; }
     .search-result-wrap > .search-result .search-item > .info {
       float: left;
       width: 440px; }
