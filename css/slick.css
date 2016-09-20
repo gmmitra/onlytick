@@ -259,3 +259,12 @@ ul.slickslide li img, .slick-dots button img {
     position:absolute;
     left: -9999px;
 }
+.slick-arrow {display: none !important; }
+.slick-slider:hover .slick-arrow { display: block !important; position: absolute; top: 50%; z-index: 2;}
+.slick-slider:hover .slick-prev {left: 0;}
+.slick-slider:hover .slick-next {right: 19px;}
+.slick-prev:before, .slick-next:before{
+    padding: 10px;
+    background: #fff;
+    color: red;
+}
