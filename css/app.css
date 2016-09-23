@@ -66,6 +66,9 @@ a, a:hover, a:active, a:focus {
   text-decoration: none;
   outline: none; }
 
+.slick-item.slick-slide {
+  background: #fff !important; }
+
 .-italic {
   font-style: italic; }
 
@@ -1251,7 +1254,8 @@ label {
     background: #fff;
     border: 1px solid #d1d1d1;
     border-top: none;
-    min-width: 120px; }
+    min-width: 120px;
+    z-index: 999; }
     .main-header-wrap .login-signup > .avatar-wrap .user-settings-sub a {
       float: none;
       display: block;
