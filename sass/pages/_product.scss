@@ -80,6 +80,10 @@
       > .name-price {
         color: $blue;
 
+        > .name {
+          @extend %ellipsis;
+        }
+
         > .price {
           color: $red;
           font-weight: bold;

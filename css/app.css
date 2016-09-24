@@ -9,7 +9,7 @@
 
 /* Mixins*/
 /* Reusable Classes */
-.wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap, .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap > .sep, .trending-ads > .trending-ads-wrap > .content > .item > .title, .trending-ads > .trending-ads-wrap > .content > .item > .location-time > .location, .chat > .box > header > p, .search-result-wrap > .search-result-info > .search-result-info-wrap > .text {
+.wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap, .wrap-with-breadcrumbs > .breadcrumbs > .breadcrumbs-wrap > .sep, .trending-ads > .trending-ads-wrap > .content > .item > .title, .trending-ads > .trending-ads-wrap > .content > .item > .location-time > .location, .chat > .box > header > p, .product-single-wrap .ads > .item > .name-price > .name, .search-result-wrap > .search-result-info > .search-result-info-wrap > .text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -131,6 +131,13 @@ a, a:hover, a:active, a:focus {
     .main-header-wrap > .main-header > .top > .left {
       width: 65%;
       float: left; }
+      .main-header-wrap > .main-header > .top > .left.countri {
+        width: 100%;
+        float: none; }
+        .main-header-wrap > .main-header > .top > .left.countri h1 {
+          display: block;
+          text-align: center;
+          width: 100%; }
       @media (max-width: 480px) {
         .main-header-wrap > .main-header > .top > .left {
           width: 100%;
