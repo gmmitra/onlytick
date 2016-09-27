@@ -2183,6 +2183,9 @@ ul.nav.nav-tabs {
           margin-right: 10px;
           border: 1px solid #d8d9db;
           font-size: 13px; }
+  @media (max-width: 798px) {
+    .search-result-wrap > .search-result .search-item:nth-child(3n+1) {
+      clear: left; } }
   .search-result-wrap > .search-result .paging {
     height: 40px;
     padding: 10px;

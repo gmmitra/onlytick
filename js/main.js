@@ -38,6 +38,21 @@ $(document).ready(function() {
     _this.parents('.box').remove();
   });
 
+  $(window).on('resize', function() {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      /* the viewport is at least 768px pixels wide */
+    } else {
+      /* the viewport is less than 768px pixels wide */
+      $('.change-result-view[data-type="list"]').trigger('click');
+    }
+  })
+
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    /* the viewport is at least 768px pixels wide */
+  } else {
+    /* the viewport is less than 768px pixels wide */
+    $('.change-result-view[data-type="list"]').trigger('click');
+  }
 
   $('.messages').on('click', function() {
   $('.chat').show();

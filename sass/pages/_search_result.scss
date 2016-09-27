@@ -292,6 +292,13 @@
                 }
             }
         }
+
+        .search-item:nth-child(3n+1) {
+          @include breakpoint-up(798px) {
+            clear: left;
+          }
+        }
+
         .paging {
             height: 40px;
             padding: 10px;
