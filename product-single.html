@@ -957,7 +957,7 @@
                     <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
                     </div>
-                     <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
+                    <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
                       <img src="img/sample-big-carousel.jpg"  title="img2" alt="img2" />
                     </div>
                     <div class="slick-item" data-toggle="modal" data-target="#carouselModal" data-title="Tanming Women's Faux Leather Collar" data-thumb="img/sample-carousel-item.jpg">
@@ -982,7 +982,19 @@
                       <img src="img/sample-big-carousel.jpg" title="img" alt="img" />
                     </div>
                   </div>
-                  <div class="slide-dots-wrap clearfix"></div>
+                  <ul class="slider-nav">
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                    <li><a href="#"><img src="img/sample-carousel-item.jpg"></a></li>
+                  </ul>
                 </div>
 
                 <div class="details">
@@ -1210,6 +1222,7 @@
       variableWidth: true,
       autoplaySpeed: 4000,
       arrows: true,
+      asNavFor: '.slider-nav',
       responsive: [{
         breakpoint: 800,
         settings: {
@@ -1228,24 +1241,15 @@
           dots: true
         }
       }],
-      customPaging: function (slider, i) {
-        var thumb = $(slider.$slides[i]).data('thumb');
-        var className = '';
-        if($(slider.$slides[i]).data('move')) {
-          className = 'move';
-        }
-        return '<a href="javascript:void(0)" class="' + className + '"><img src="' + thumb + '"></a>';
-      }
     });
 
-    $('#carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-      if(nextSlide >= 7) {
-        if(currentSlide < nextSlide) {
-          $('.slide-dots-wrap ul').css('margin-left', '-=86px');
-        }
-      } else {
-        $('.slide-dots-wrap ul').css('margin-left', '0px');
-      }
+    $('.slider-nav').slick({
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      asNavFor: '#carousel',
+      focusOnSelect: true,
+      centerMode: true,
+      arrows: false,
     });
 
     $('.slick-item').on('click', function() {

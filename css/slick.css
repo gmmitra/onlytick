@@ -193,10 +193,7 @@ ul.slickslide li img, .slick-dots button img {
 }
 
 @media (max-width: 680px) {
-  .gallery {
-    padding-bottom: 0 !important;
-  }
-  .slick-dots {
+  .slider-nav {
     display: none !important;
   }
 }
@@ -267,4 +264,27 @@ ul.slickslide li img, .slick-dots button img {
     padding: 10px;
     background: #fff;
     color: red;
+}
+
+.slider-nav {
+  padding-left: 0;
+}
+
+.slider-nav  li {
+  width: 100%;
+  display: inline-block;
+}
+
+.slider-nav a {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.slider-nav a img {
+  width: 100%;
+}
+
+.slider-nav .slick-current a {
+  border: 2px solid red;
 }

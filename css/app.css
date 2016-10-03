@@ -1875,8 +1875,7 @@ label {
     -moz-box-shadow: -1px 7px 13px -3px #8e8e8e;
     box-shadow: -1px 7px 13px -3px #8e8e8e; }
     .product-single-wrap .body > .gallery {
-      position: relative;
-      padding-bottom: 76px; }
+      position: relative; }
     .product-single-wrap .body > .details {
       padding: 10px;
       margin-top: 10px;
