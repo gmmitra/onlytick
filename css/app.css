@@ -287,9 +287,18 @@ a, a:hover, a:active, a:focus {
           .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .location:hover > .sub-menu, .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang:hover > .sub-menu {
             display: block; }
         .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang > .sub-menu {
-          width: 53px;
-          right: 0;
-          padding-right: 0; }
+    position: absolute;
+    max-width: 130px;
+    padding-right: 15px;
+    display: none;
+    background: #fff;
+    border-bottom: 1px solid #d1d1d1;
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+    overflow-y: scroll;
+    max-height: 300px;
+    z-index: 999;
+}
           .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .lang > .sub-menu > ul {
             padding: 3px 0 0 12px; }
         .main-header-wrap > .main-header > .top > .right > .location-lang-wrap > .sep {
